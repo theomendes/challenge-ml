@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A9C1AF062D4D690B0089600E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A9C1AF052D4D690B0089600E /* Alamofire */; };
+		A9C1AF092D4D695F0089600E /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = A9C1AF082D4D695F0089600E /* Mocker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C1AF092D4D695F0089600E /* Mocker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +143,7 @@
 			);
 			name = "Challenge Mercado LibreTests";
 			packageProductDependencies = (
+				A9C1AF082D4D695F0089600E /* Mocker */,
 			);
 			productName = "Challenge Mercado LibreTests";
 			productReference = A9C1AED52D4D65F30089600E /* Challenge Mercado LibreTests.xctest */;
@@ -203,6 +206,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A9C1AF042D4D690B0089600E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A9C1AF072D4D695F0089600E /* XCRemoteSwiftPackageReference "Mocker" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A9C1AEC52D4D65F00089600E /* Products */;
@@ -568,6 +572,14 @@
 				minimumVersion = 5.10.2;
 			};
 		};
+		A9C1AF072D4D695F0089600E /* XCRemoteSwiftPackageReference "Mocker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/Mocker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -575,6 +587,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A9C1AF042D4D690B0089600E /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		A9C1AF082D4D695F0089600E /* Mocker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9C1AF072D4D695F0089600E /* XCRemoteSwiftPackageReference "Mocker" */;
+			productName = Mocker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
