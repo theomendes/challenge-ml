@@ -20,11 +20,11 @@ protocol RequestType: URLRequestConvertible {
 // MARK: - Default implementation
 
 extension RequestType {
-    public var parameters: APIParameters {
+    var parameters: APIParameters {
         .plain
     }
     
-    public var headers: HTTPHeaders {
+    var headers: HTTPHeaders {
         HTTPHeaders([
             .contentType("application/json")
         ])
