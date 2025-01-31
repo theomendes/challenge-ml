@@ -29,7 +29,7 @@ struct SearchServiceTests {
 
         mock.register()
 
-        let request = await self.service.query("Apple Watch", category: nil, limit: 10, offset: 0)
+        let request = await self.service.search("Apple Watch", category: nil, limit: 10, offset: 0)
 
         switch request.result {
         case .success(let response):
