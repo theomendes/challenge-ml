@@ -30,7 +30,7 @@
       "target" : {
         "containerPath" : "container:Challenge Mercado Libre.xcodeproj",
         "identifier" : "A9C1AED42D4D65F30089600E",
-        "name" : "Challenge Mercado LibreTests"
+        "name" : "Unit Tests"
       }
     },
     {
@@ -38,7 +38,7 @@
       "target" : {
         "containerPath" : "container:Challenge Mercado Libre.xcodeproj",
         "identifier" : "A9C1AEDE2D4D65F30089600E",
-        "name" : "Challenge Mercado LibreUITests"
+        "name" : "UI Tests"
       }
     }
   ],

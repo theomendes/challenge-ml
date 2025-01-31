@@ -41,8 +41,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9C1AED42D4D65F30089600E"
-               BuildableName = "Challenge Mercado LibreTests.xctest"
-               BlueprintName = "Challenge Mercado LibreTests"
+               BuildableName = "Unit Tests.xctest"
+               BlueprintName = "Unit Tests"
                ReferencedContainer = "container:Challenge Mercado Libre.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -52,8 +52,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9C1AEDE2D4D65F30089600E"
-               BuildableName = "Challenge Mercado LibreUITests.xctest"
-               BlueprintName = "Challenge Mercado LibreUITests"
+               BuildableName = "UI Tests.xctest"
+               BlueprintName = "UI Tests"
                ReferencedContainer = "container:Challenge Mercado Libre.xcodeproj">
             </BuildableReference>
          </TestableReference>

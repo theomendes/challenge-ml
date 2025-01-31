@@ -30,8 +30,8 @@
 
 /* Begin PBXFileReference section */
 		A9C1AEC42D4D65F00089600E /* Challenge Mercado Libre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge Mercado Libre.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9C1AED52D4D65F30089600E /* Challenge Mercado LibreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge Mercado LibreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9C1AEDF2D4D65F30089600E /* Challenge Mercado LibreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge Mercado LibreUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C1AED52D4D65F30089600E /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C1AEDF2D4D65F30089600E /* UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C1AF192D4D70060089600E /* DefaultTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DefaultTestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +41,14 @@
 			path = "Challenge Mercado Libre";
 			sourceTree = "<group>";
 		};
-		A9C1AED82D4D65F30089600E /* Challenge Mercado LibreTests */ = {
+		A9C1AED82D4D65F30089600E /* Unit Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Challenge Mercado LibreTests";
+			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
-		A9C1AEE22D4D65F30089600E /* Challenge Mercado LibreUITests */ = {
+		A9C1AEE22D4D65F30089600E /* UI Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Challenge Mercado LibreUITests";
+			path = "UI Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -85,8 +85,8 @@
 			children = (
 				A9C1AF192D4D70060089600E /* DefaultTestPlan.xctestplan */,
 				A9C1AEC62D4D65F00089600E /* Challenge Mercado Libre */,
-				A9C1AED82D4D65F30089600E /* Challenge Mercado LibreTests */,
-				A9C1AEE22D4D65F30089600E /* Challenge Mercado LibreUITests */,
+				A9C1AED82D4D65F30089600E /* Unit Tests */,
+				A9C1AEE22D4D65F30089600E /* UI Tests */,
 				A9C1AEC52D4D65F00089600E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,8 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				A9C1AEC42D4D65F00089600E /* Challenge Mercado Libre.app */,
-				A9C1AED52D4D65F30089600E /* Challenge Mercado LibreTests.xctest */,
-				A9C1AEDF2D4D65F30089600E /* Challenge Mercado LibreUITests.xctest */,
+				A9C1AED52D4D65F30089600E /* Unit Tests.xctest */,
+				A9C1AEDF2D4D65F30089600E /* UI Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,9 +127,9 @@
 			productReference = A9C1AEC42D4D65F00089600E /* Challenge Mercado Libre.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9C1AED42D4D65F30089600E /* Challenge Mercado LibreTests */ = {
+		A9C1AED42D4D65F30089600E /* Unit Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9C1AEEC2D4D65F30089600E /* Build configuration list for PBXNativeTarget "Challenge Mercado LibreTests" */;
+			buildConfigurationList = A9C1AEEC2D4D65F30089600E /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
 				A9C1AED12D4D65F30089600E /* Sources */,
 				A9C1AED22D4D65F30089600E /* Frameworks */,
@@ -141,19 +141,19 @@
 				A9C1AED72D4D65F30089600E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A9C1AED82D4D65F30089600E /* Challenge Mercado LibreTests */,
+				A9C1AED82D4D65F30089600E /* Unit Tests */,
 			);
-			name = "Challenge Mercado LibreTests";
+			name = "Unit Tests";
 			packageProductDependencies = (
 				A9C1AF082D4D695F0089600E /* Mocker */,
 			);
 			productName = "Challenge Mercado LibreTests";
-			productReference = A9C1AED52D4D65F30089600E /* Challenge Mercado LibreTests.xctest */;
+			productReference = A9C1AED52D4D65F30089600E /* Unit Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A9C1AEDE2D4D65F30089600E /* Challenge Mercado LibreUITests */ = {
+		A9C1AEDE2D4D65F30089600E /* UI Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9C1AEEF2D4D65F30089600E /* Build configuration list for PBXNativeTarget "Challenge Mercado LibreUITests" */;
+			buildConfigurationList = A9C1AEEF2D4D65F30089600E /* Build configuration list for PBXNativeTarget "UI Tests" */;
 			buildPhases = (
 				A9C1AEDB2D4D65F30089600E /* Sources */,
 				A9C1AEDC2D4D65F30089600E /* Frameworks */,
@@ -165,13 +165,13 @@
 				A9C1AEE12D4D65F30089600E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A9C1AEE22D4D65F30089600E /* Challenge Mercado LibreUITests */,
+				A9C1AEE22D4D65F30089600E /* UI Tests */,
 			);
-			name = "Challenge Mercado LibreUITests";
+			name = "UI Tests";
 			packageProductDependencies = (
 			);
 			productName = "Challenge Mercado LibreUITests";
-			productReference = A9C1AEDF2D4D65F30089600E /* Challenge Mercado LibreUITests.xctest */;
+			productReference = A9C1AEDF2D4D65F30089600E /* UI Tests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,8 +216,8 @@
 			projectRoot = "";
 			targets = (
 				A9C1AEC32D4D65F00089600E /* Challenge Mercado Libre */,
-				A9C1AED42D4D65F30089600E /* Challenge Mercado LibreTests */,
-				A9C1AEDE2D4D65F30089600E /* Challenge Mercado LibreUITests */,
+				A9C1AED42D4D65F30089600E /* Unit Tests */,
+				A9C1AEDE2D4D65F30089600E /* UI Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -476,8 +476,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theo.Challenge-Mercado-LibreTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge Mercado Libre.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Challenge Mercado Libre";
 			};
 			name = Debug;
@@ -494,8 +497,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theo.Challenge-Mercado-LibreTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge Mercado Libre.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Challenge Mercado Libre";
 			};
 			name = Release;
@@ -510,8 +516,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theo.Challenge-Mercado-LibreUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "Challenge Mercado Libre";
 			};
 			name = Debug;
@@ -526,8 +536,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theo.Challenge-Mercado-LibreUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "Challenge Mercado Libre";
 			};
 			name = Release;
@@ -553,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9C1AEEC2D4D65F30089600E /* Build configuration list for PBXNativeTarget "Challenge Mercado LibreTests" */ = {
+		A9C1AEEC2D4D65F30089600E /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9C1AEED2D4D65F30089600E /* Debug */,
@@ -562,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9C1AEEF2D4D65F30089600E /* Build configuration list for PBXNativeTarget "Challenge Mercado LibreUITests" */ = {
+		A9C1AEEF2D4D65F30089600E /* Build configuration list for PBXNativeTarget "UI Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9C1AEF02D4D65F30089600E /* Debug */,
