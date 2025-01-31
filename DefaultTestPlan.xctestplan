@@ -1,0 +1,46 @@
+{
+  "configurations" : [
+    {
+      "id" : "D6F0F5F4-CD05-486B-9A33-87D2438B77A0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Challenge Mercado Libre.xcodeproj",
+          "identifier" : "A9C1AEC32D4D65F00089600E",
+          "name" : "Challenge Mercado Libre"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Challenge Mercado Libre.xcodeproj",
+      "identifier" : "A9C1AEC32D4D65F00089600E",
+      "name" : "Challenge Mercado Libre"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Challenge Mercado Libre.xcodeproj",
+        "identifier" : "A9C1AED42D4D65F30089600E",
+        "name" : "Challenge Mercado LibreTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Challenge Mercado Libre.xcodeproj",
+        "identifier" : "A9C1AEDE2D4D65F30089600E",
+        "name" : "Challenge Mercado LibreUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
