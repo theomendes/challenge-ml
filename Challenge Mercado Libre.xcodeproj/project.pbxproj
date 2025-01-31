@@ -32,6 +32,7 @@
 		A9C1AEC42D4D65F00089600E /* Challenge Mercado Libre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge Mercado Libre.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C1AED52D4D65F30089600E /* Challenge Mercado LibreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge Mercado LibreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C1AEDF2D4D65F30089600E /* Challenge Mercado LibreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge Mercado LibreUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C1AF192D4D70060089600E /* DefaultTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DefaultTestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -82,6 +83,7 @@
 		A9C1AEBB2D4D65F00089600E = {
 			isa = PBXGroup;
 			children = (
+				A9C1AF192D4D70060089600E /* DefaultTestPlan.xctestplan */,
 				A9C1AEC62D4D65F00089600E /* Challenge Mercado Libre */,
 				A9C1AED82D4D65F30089600E /* Challenge Mercado LibreTests */,
 				A9C1AEE22D4D65F30089600E /* Challenge Mercado LibreUITests */,
