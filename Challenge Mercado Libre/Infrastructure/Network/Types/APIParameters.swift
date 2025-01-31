@@ -8,7 +8,7 @@
 import Alamofire
 import Foundation
 
-public enum APIParameters: Sendable {
+enum APIParameters: Sendable {
     case plain
     case parameters(parameters: Alamofire.Parameters, encoding: ParameterEncoding)
 }
