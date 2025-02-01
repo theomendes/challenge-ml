@@ -15,7 +15,7 @@ final class SearchVC: UIViewController {
     private var dataSource: DataSource!
 
     private lazy var collectionView: UICollectionView = {
-        let view = UICollectionView(frame: .zero)
+        let view = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .green
         view.showsVerticalScrollIndicator = false
@@ -30,6 +30,8 @@ final class SearchVC: UIViewController {
     init(viewModel: SearchVM) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+
+        setupUI()
     }
     
     required init?(coder: NSCoder) {
@@ -39,7 +41,15 @@ final class SearchVC: UIViewController {
     private func setupUI() {
         view.addSubview(collectionView)
 
+        setupConstraints()
+
         configureDataSourceProvider()
+
+        Task {
+            await viewModel.fetch(for: "Apple Watch", limit: 20, offSet: 0)
+
+            await applySnapshot(with: viewModel.sections)
+        }
     }
 
     private func setupConstraints() {
@@ -56,7 +66,7 @@ final class SearchVC: UIViewController {
 
 extension SearchVC {
     @MainActor
-    private func applySnapshot(with sections: [SearchSection]) {
+    private func applySnapshot(with sections: [SearchSection]) async {
         var snapshot = Snapshot()
         snapshot.appendSections(sections)
         sections.forEach {
@@ -95,5 +105,34 @@ extension SearchVC {
         dataSource = DataSource(collectionView: collectionView) { collectionView, indexPath, itemIdentifier in
             collectionView.dequeueConfiguredReusableCell(using: itemRegistration, for: indexPath, item: itemIdentifier)
         }
+    }
+}
+
+extension SearchVC {
+    func createLayout() -> UICollectionViewLayout {
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = 40
+
+        return UICollectionViewCompositionalLayout(sectionProvider: { sectionIndex, layoutEnvironment in
+            let itemSize = NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .estimated(100)
+            )
+
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+            let groupSize = NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .estimated(100)
+            )
+
+            let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
+
+            let section = NSCollectionLayoutSection(group: group)
+            section.interGroupSpacing = 10
+            section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 16, bottom: 10, trailing: 16)
+
+            return section
+        }, configuration: config)
     }
 }
