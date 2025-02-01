@@ -19,13 +19,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else { return }
         self.window = UIWindow(windowScene: windowScene)
 
-        @Injected(\.networkProvider) var networkProvider
-
-        let repository = SearchResultRepository(service: networkProvider.searchService)
-        let useCase = SearchUseCase(repository: repository)
-        let viewModel = SearchResultVM(useCase: useCase)
-
-        window?.rootViewController = UINavigationController(rootViewController: SearchResultVC(viewModel: viewModel))
+        window?.rootViewController = UINavigationController(rootViewController: QueryVC())
 
         window?.makeKeyAndVisible()
     }
