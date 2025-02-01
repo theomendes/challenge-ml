@@ -10,5 +10,5 @@ import Foundation
 struct SearchItem: Identifiable, Hashable {
     let id: String
     let title: String
-    let thumbnail: String
+    let thumbnail: URL
 }
