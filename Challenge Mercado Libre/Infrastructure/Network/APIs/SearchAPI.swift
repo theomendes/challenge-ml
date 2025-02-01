@@ -12,12 +12,13 @@ struct SearchAPI: RequestType {
     typealias Response = SearchResponse
 
     let query: String
+    let siteID: String
     let category: String?
     let limit: Int
     let offset: Int
 
     var path: String {
-        "/search"
+        "/sites/\(siteID)/search"
     }
 
     var method: HTTPMethod {
