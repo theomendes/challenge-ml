@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct SearchSection: Hashable {
-    let items: [SearchItem]
+struct SearchResultSection: Hashable {
+    let items: [SearchResultItem]
 }

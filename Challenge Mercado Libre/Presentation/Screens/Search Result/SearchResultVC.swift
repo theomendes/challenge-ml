@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class SearchVC: UIViewController {
-    typealias DataSource = UICollectionViewDiffableDataSource<SearchSection, SearchItem>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<SearchSection, SearchItem>
+final class SearchResultVC: UIViewController {
+    typealias DataSource = UICollectionViewDiffableDataSource<SearchResultSection, SearchResultItem>
+    typealias Snapshot = NSDiffableDataSourceSnapshot<SearchResultSection, SearchResultItem>
 
-    private let viewModel: SearchVM
+    private let viewModel: SearchResultVM
     private var dataSource: DataSource!
 
     private lazy var collectionView: UICollectionView = {
@@ -27,7 +27,7 @@ final class SearchVC: UIViewController {
         return view
     }()
 
-    init(viewModel: SearchVM) {
+    init(viewModel: SearchResultVM) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
 
@@ -64,9 +64,9 @@ final class SearchVC: UIViewController {
 
 // MARK: - Snapshot
 
-extension SearchVC {
+extension SearchResultVC {
     @MainActor
-    private func applySnapshot(with sections: [SearchSection]) async {
+    private func applySnapshot(with sections: [SearchResultSection]) async {
         var snapshot = Snapshot()
         snapshot.appendSections(sections)
         sections.forEach {
@@ -81,22 +81,22 @@ extension SearchVC {
 
 // MARK: - UICollectionViewDelegate
 
-extension SearchVC: UICollectionViewDelegate {
+extension SearchResultVC: UICollectionViewDelegate {
 
 }
 
 // MARK: - UICollectionViewDataSourcePrefetching
 
-extension SearchVC: UICollectionViewDataSourcePrefetching {
+extension SearchResultVC: UICollectionViewDataSourcePrefetching {
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
 
     }
 }
 
 // MARK: - DataSource
-extension SearchVC {
+extension SearchResultVC {
     func configureDataSourceProvider() {
-        let itemRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, SearchItem> { cell, indexPath, item in
+        let itemRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, SearchResultItem> { cell, indexPath, item in
             var content = cell.defaultContentConfiguration()
             content.text = item.title
             cell.contentConfiguration = content
@@ -108,7 +108,7 @@ extension SearchVC {
     }
 }
 
-extension SearchVC {
+extension SearchResultVC {
     func createLayout() -> UICollectionViewLayout {
         let config = UICollectionViewCompositionalLayoutConfiguration()
         config.interSectionSpacing = 40

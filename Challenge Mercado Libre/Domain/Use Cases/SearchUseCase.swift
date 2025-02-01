@@ -8,19 +8,19 @@
 import Foundation
 import OSLog
 
-protocol SearchUseCaseType {
-    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> [SearchSection]
+protocol SearchResultUseCaseType {
+    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> [SearchResultSection]
 }
 
-final class SearchUseCase: SearchUseCaseType {
-    private var repository: SearchRepositoryType
+final class SearchUseCase: SearchResultUseCaseType {
+    private var repository: SearchResultRepositoryType
     private let logger = Logger(subsystem: "com.theo.Challenge-Mercado-Libre", category: "SearchUseCase")
 
-    init(repository: SearchRepositoryType) {
+    init(repository: SearchResultRepositoryType) {
         self.repository = repository
     }
 
-    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> [SearchSection] {
+    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> [SearchResultSection] {
         logger.log(level: .info, "Starting execute for query: \(query), on site: \(siteID), with category: \(category ?? "nil"), limit: \(limit), offset: \(offset)")
         let response = await repository.getResults(query, siteID: siteID, category: category, limit: limit, offset: offset)
 
@@ -36,12 +36,12 @@ final class SearchUseCase: SearchUseCaseType {
 }
 
 extension SearchUseCase {
-    private func convertToSections(_ response: SearchResponse) -> [SearchSection] {
+    private func convertToSections(_ response: SearchResponse) -> [SearchResultSection] {
         let items = response.results.map { result in
-            SearchItem(id: result.id, title: result.title, thumbnail: result.thumbnail)
+            SearchResultItem(id: result.id, title: result.title, thumbnail: result.thumbnail)
         }
         return [
-            SearchSection(items: items)
+            SearchResultSection(items: items)
         ]
     }
 }

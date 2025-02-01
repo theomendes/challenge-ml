@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class SearchVM {
+final class SearchResultVM {
     private let useCase: SearchUseCase
-    @Published var sections = [SearchSection]()
+    @Published var sections = [SearchResultSection]()
 
     init(useCase: SearchUseCase) {
         self.useCase = useCase

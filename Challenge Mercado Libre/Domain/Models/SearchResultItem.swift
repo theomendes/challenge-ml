@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SearchItem: Identifiable, Hashable {
+struct SearchResultItem: Identifiable, Hashable {
     let id: String
     let title: String
     let thumbnail: URL

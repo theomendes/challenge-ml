@@ -8,11 +8,11 @@
 import Alamofire
 import Foundation
 
-protocol SearchRepositoryType {
+protocol SearchResultRepositoryType {
     func getResults(_ q: String, siteID: String, category: String?, limit: Int, offset: Int) async -> DataResponse<SearchResponse, AFError>
 }
 
-final class SearchRepository: SearchRepositoryType {
+final class SearchResultRepository: SearchResultRepositoryType {
     private let service: SearchServiceType
 
     init(service: SearchServiceType) {
