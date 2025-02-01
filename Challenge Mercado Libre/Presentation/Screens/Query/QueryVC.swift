@@ -82,7 +82,7 @@ final class QueryVC: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "MLYellow")
 
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
