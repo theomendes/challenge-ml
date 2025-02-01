@@ -16,13 +16,17 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
+        guard let windowScene = scene as? UIWindowScene else { return }
+        self.window = UIWindow(windowScene: windowScene)
 
-        let window = UIWindow(windowScene: windowScene)
-        let contentView = ContentView()
+        @Injected(\.networkProvider) var networkProvider
 
-        window.rootViewController = UIHostingController(rootView: contentView)
-        self.window = window
-        window.makeKeyAndVisible()
+        let repository = SearchRepository(service: networkProvider.searchService)
+        let useCase = SearchUseCase(repository: repository)
+        let viewModel = SearchVM(useCase: useCase)
+
+        window?.rootViewController = UINavigationController(rootViewController: SearchVC(viewModel: viewModel))
+
+        window?.makeKeyAndVisible()
     }
 }
