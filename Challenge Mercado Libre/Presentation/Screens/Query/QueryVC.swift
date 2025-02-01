@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class QueryVC: UIViewController {
+final class QueryVC: BaseVC {
     private let generator = UIImpactFeedbackGenerator(style: .medium)
 
     private let scrollView: UIScrollView = {
@@ -75,17 +75,15 @@ final class QueryVC: UIViewController {
 
     init() {
         super.init(nibName: nil, bundle: nil)
-
-        setupUI()
-        setupKeyboardHandling()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupUI() {
-        view.backgroundColor = UIColor(named: "MLYellow")
+    override func setupUI() {
+        super.setupUI()
+        view.backgroundColor = UIColor.mlYellow
 
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
@@ -96,15 +94,16 @@ final class QueryVC: UIViewController {
         stackView.addArrangedSubview(searchField)
         stackView.addArrangedSubview(searchButton)
 
-        setupConstraints()
-
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
 
         searchField.delegate = self
+
+        setupKeyboardHandling()
     }
 
-    private func setupConstraints() {
+    override func setupConstraints() {
+        super.setupConstraints()
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),

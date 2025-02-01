@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SearchResultVC: UIViewController {
+final class SearchResultVC: BaseVC {
     typealias DataSource = UICollectionViewDiffableDataSource<SearchResultSection, SearchResultItem>
     typealias Snapshot = NSDiffableDataSourceSnapshot<SearchResultSection, SearchResultItem>
 
@@ -30,15 +30,14 @@ final class SearchResultVC: UIViewController {
     init(viewModel: SearchResultVM) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-
-        setupUI()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func setupUI() {
+    override func setupUI() {
+        super.setupUI()
         view.addSubview(collectionView)
 
         setupConstraints()
@@ -52,7 +51,8 @@ final class SearchResultVC: UIViewController {
         }
     }
 
-    private func setupConstraints() {
+    override func setupConstraints() {
+        super.setupConstraints()
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
