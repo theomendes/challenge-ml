@@ -10,11 +10,13 @@ import Foundation
 struct SearchResponse {
     let siteId: String
     let paging: Paging
+    let results: [Result]
 }
 
 extension SearchResponse: Decodable {
     enum CodingKeys: String, CodingKey {
         case siteId = "site_id"
         case paging
+        case results
     }
 }
