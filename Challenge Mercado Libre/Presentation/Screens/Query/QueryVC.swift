@@ -116,8 +116,8 @@ final class QueryVC: UIViewController {
 
             imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             imageView.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 40),
-            imageView.widthAnchor.constraint(equalToConstant: 80),
-            imageView.heightAnchor.constraint(equalToConstant: 80),
+            imageView.widthAnchor.constraint(equalToConstant: 150),
+            imageView.heightAnchor.constraint(equalToConstant: 150),
 
             stackView.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20),
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
