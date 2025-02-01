@@ -8,6 +8,7 @@
 import UIKit
 
 final class QueryVC: UIViewController {
+    private let generator = UIImpactFeedbackGenerator(style: .medium)
 
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -32,14 +33,17 @@ final class QueryVC: UIViewController {
     }()
 
     private var searchField: SearchTextField = {
-        let field = SearchTextField(frame: .zero)
+        let field = SearchTextField()
         field.translatesAutoresizingMaskIntoConstraints = false
         field.layer.cornerRadius = 3
         field.layer.masksToBounds = false
         field.backgroundColor = .white
         field.textColor = .black
         field.font = UIFont.systemFont(ofSize: 16)
-        field.placeholder = "Buscar produtos, marcas e muito mais…"
+        field.attributedPlaceholder = NSAttributedString(
+            string: "Buscar produtos, marcas e muito mais…", attributes: [
+                NSAttributedString.Key.foregroundColor: UIColor.lightGray
+            ])
         field.layer.shadowColor = UIColor.black.cgColor
         field.layer.shadowOpacity = 0.2
         field.layer.shadowOffset = CGSize(width: 0, height: 1)
@@ -146,10 +150,11 @@ extension QueryVC {
     }
 
     @objc private func searchButtonTapped() {
-        let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.impactOccurred()
 
-        print("Search button tapped!")
+        if let text = searchField.text {
+            searchWithQuery(text)
+        }
     }
 }
 
