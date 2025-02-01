@@ -16,6 +16,14 @@ final class SearchUseCase: SearchResultUseCaseType {
     private var repository: SearchResultRepositoryType
     private let logger = Logger(subsystem: "com.theo.Challenge-Mercado-Libre", category: "SearchUseCase")
 
+    private var numberFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 0
+        return formatter
+    }()
+
     init(repository: SearchResultRepositoryType) {
         self.repository = repository
     }
@@ -37,11 +45,27 @@ final class SearchUseCase: SearchResultUseCaseType {
 
 extension SearchUseCase {
     private func convertToSections(_ response: SearchResponse) -> [SearchResultSection] {
-        let items = response.results.map { result in
-            SearchResultItem(id: result.id, title: result.title, thumbnail: result.thumbnail)
+        let items = response.results.map { [weak self] result in
+            SearchResultItem(
+                id: result.id,
+                title: result.title,
+                thumbnail: result.thumbnail,
+                price: .init(
+                    amount: result.salePrice.amount,
+                    originalAmount: result.salePrice.regularAmount,
+                    currency: result.salePrice.currency,
+                    formatedAmount: self?.formatCurrency(amount: result.salePrice.amount as NSNumber, currency: result.salePrice.currency) ?? ""
+                ),
+                freeShipping: result.shipping.freeShipping,
+                officialStore: result.officialStoreName)
         }
         return [
             SearchResultSection(items: items)
         ]
+    }
+
+    private func formatCurrency(amount: NSNumber, currency: String) -> String {
+        numberFormatter.currencyCode = currency
+        return numberFormatter.string(from: amount) ?? ""
     }
 }
