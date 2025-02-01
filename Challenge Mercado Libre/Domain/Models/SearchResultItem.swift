@@ -11,4 +11,7 @@ struct SearchResultItem: Identifiable, Hashable {
     let id: String
     let title: String
     let thumbnail: URL
+    let price: SearchItemPrice
+    let freeShipping: Bool
+    let officialStore: String?
 }
