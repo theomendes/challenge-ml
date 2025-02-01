@@ -9,7 +9,7 @@ import Foundation
 
 final class SearchResultVM {
     private let useCase: SearchUseCase
-    private let query: Query
+    let query: Query
     @Published var sections = [SearchResultSection]()
     private var limit = 20
     private var offSet = 0

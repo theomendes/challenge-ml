@@ -17,13 +17,13 @@ final class SearchResultVC: BaseVC {
     private lazy var collectionView: UICollectionView = {
         let view = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .green
         view.showsVerticalScrollIndicator = false
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.contentInset = .init(top: 20, left: 0, bottom: 20, right: 0)
         view.delegate = self
         view.isPrefetchingEnabled = true
         view.prefetchDataSource = self
+        view.backgroundColor = .white
         return view
     }()
 
@@ -39,8 +39,8 @@ final class SearchResultVC: BaseVC {
     override func setupUI() {
         super.setupUI()
         view.addSubview(collectionView)
-
-        setupConstraints()
+        title = viewModel.query.text
+        view.backgroundColor = .white
 
         configureDataSourceProvider()
 
@@ -54,10 +54,10 @@ final class SearchResultVC: BaseVC {
     override func setupConstraints() {
         super.setupConstraints()
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor)
         ])
     }
 }
@@ -96,10 +96,8 @@ extension SearchResultVC: UICollectionViewDataSourcePrefetching {
 // MARK: - DataSource
 extension SearchResultVC {
     func configureDataSourceProvider() {
-        let itemRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, SearchResultItem> { cell, indexPath, item in
-            var content = cell.defaultContentConfiguration()
-            content.text = item.title
-            cell.contentConfiguration = content
+        let itemRegistration = UICollectionView.CellRegistration<SwiftUIHostCVC<SearchResultItemView>, SearchResultItem> { [weak self] cell, indexPath, item in
+            cell.configure(with: .init(item: item), in: self)
         }
 
         dataSource = DataSource(collectionView: collectionView) { collectionView, indexPath, itemIdentifier in
