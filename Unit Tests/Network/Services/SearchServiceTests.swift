@@ -38,6 +38,8 @@ struct SearchServiceTests {
             #expect(response.paging.offset == 0)
             #expect(response.paging.limit == 10)
             #expect(response.paging.total == 1265)
+            #expect(response.results.count == 10)
+            #expect(response.results.first?.id == "MLB5097135428")
         case .failure(let error):
             Issue.record(error)
         }
