@@ -47,16 +47,15 @@ final class QueryVC: UIViewController {
         return field
     }()
 
-    private lazy var searchButton: UIButton = {
-        var configuration = UIButton.Configuration.gray()
-        configuration.cornerStyle = .dynamic
-        configuration.baseForegroundColor = UIColor.systemPink
+    private lazy var searchButton: MLButton = {
+        var configuration = UIButton.Configuration.mercadoLibre()
         configuration.buttonSize = .large
 
-        let button = UIButton(configuration: configuration, primaryAction: nil)
+        let button = MLButton(configuration: configuration, primaryAction: nil)
         button.setTitle("Buscar", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isEnabled = false
+        button.addTarget(self, action: #selector(searchButtonTapped), for: .touchUpInside)
         return button
     }()
 
@@ -133,6 +132,13 @@ extension QueryVC {
     func searchWithQuery(_ query: String) {
 
     }
+
+    @objc private func searchButtonTapped() {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+
+        print("Search button tapped!")
+    }
 }
 
 // MARK: - Keyboard handling
@@ -185,7 +191,7 @@ extension QueryVC: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        
+
         if searchButton.isEnabled, let text = textField.text {
             searchWithQuery(text)
         }
