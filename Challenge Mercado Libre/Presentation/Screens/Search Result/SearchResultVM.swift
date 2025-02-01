@@ -9,18 +9,36 @@ import Foundation
 
 final class SearchResultVM {
     private let useCase: SearchUseCase
+    private let query: Query
     @Published var sections = [SearchResultSection]()
+    private var limit = 20
+    private var offSet = 0
 
-    init(useCase: SearchUseCase) {
+    init(useCase: SearchUseCase, query: Query) {
         self.useCase = useCase
-        self.sections = sections
+        self.query = query
     }
 
-    func fetch(for query: String, limit: Int, offSet: Int) async {
+    func fetchResults() async {
         do {
-            sections = try await useCase.execute(for: query, on: "MLB", category: nil, limit: limit, offset: offSet)
+            sections = try await useCase.execute(
+                for: query.text,
+                on: query.siteID,
+                category: query.category,
+                limit: limit,
+                offset: offSet
+            )
+            offSet += limit
         } catch {
 
         }
+    }
+}
+
+extension SearchResultVM {
+    struct Query {
+        var text: String
+        var siteID: String
+        var category: String?
     }
 }

@@ -46,7 +46,7 @@ final class SearchResultVC: UIViewController {
         configureDataSourceProvider()
 
         Task {
-            await viewModel.fetch(for: "Apple Watch", limit: 20, offSet: 0)
+            await viewModel.fetchResults()
 
             await applySnapshot(with: viewModel.sections)
         }
