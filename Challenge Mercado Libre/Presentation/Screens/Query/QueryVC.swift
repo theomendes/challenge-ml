@@ -130,7 +130,19 @@ final class QueryVC: UIViewController {
 
 extension QueryVC {
     func searchWithQuery(_ query: String) {
+        @Injected(\.networkProvider) var networkProvider
 
+        let repository = SearchResultRepository(service: networkProvider.searchService)
+        let useCase = SearchUseCase(repository: repository)
+        let viewModel = SearchResultVM(
+            useCase: useCase,
+            query: .init(
+                text: query,
+                siteID: "MLB",
+                category: nil
+            ))
+        let vc = SearchResultVC(viewModel: viewModel)
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     @objc private func searchButtonTapped() {
