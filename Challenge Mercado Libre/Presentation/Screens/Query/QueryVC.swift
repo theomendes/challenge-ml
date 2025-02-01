@@ -35,13 +35,15 @@ final class QueryVC: UIViewController {
         let field = SearchTextField(frame: .zero)
         field.translatesAutoresizingMaskIntoConstraints = false
         field.layer.cornerRadius = 3
-        field.layer.masksToBounds = true
-        field.layer.borderWidth = 1
-        field.layer.borderColor = UIColor.lightGray.cgColor
+        field.layer.masksToBounds = false
         field.backgroundColor = .white
         field.textColor = .black
         field.font = UIFont.systemFont(ofSize: 16)
         field.placeholder = "Buscar produtos, marcas e muito mais…"
+        field.layer.shadowColor = UIColor.black.cgColor
+        field.layer.shadowOpacity = 0.2
+        field.layer.shadowOffset = CGSize(width: 0, height: 1)
+        field.layer.shadowRadius = 4
         return field
     }()
 
