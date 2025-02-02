@@ -29,6 +29,13 @@ final class SearchResultVC: BaseVC {
         return view
     }()
 
+    private let loadingView: LoadingView = {
+        let view = LoadingView()
+        view.isHidden = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
     init(viewModel: SearchResultVM) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -41,12 +48,15 @@ final class SearchResultVC: BaseVC {
     override func setupUI() {
         super.setupUI()
         view.addSubview(collectionView)
+        view.addSubview(loadingView)
+
         title = viewModel.query.text
         view.backgroundColor = .white
 
         configureDataSourceProvider()
 
         Task {
+            showIsLoading(true)
             await viewModel.fetchResults()
 
             await applySnapshot(with: viewModel.sections)
@@ -59,8 +69,22 @@ final class SearchResultVC: BaseVC {
             collectionView.topAnchor.constraint(equalTo: view.topAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor)
+            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+
+            loadingView.topAnchor.constraint(equalTo: collectionView.topAnchor),
+            loadingView.trailingAnchor.constraint(equalTo: collectionView.trailingAnchor),
+            loadingView.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor),
+            loadingView.leadingAnchor.constraint(equalTo: collectionView.leadingAnchor)
         ])
+    }
+
+    @MainActor
+    private func showIsLoading(_ loading: Bool) {
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            self?.loadingView.alpha = loading ? 1 : 0
+        } completion: { [weak self] _ in
+            self?.loadingView.isHidden = !loading
+        }
     }
 }
 
@@ -75,8 +99,8 @@ extension SearchResultVC {
             snapshot.appendItems($0.items)
         }
 
-        dataSource.apply(snapshot, animatingDifferences: true) {
-
+        dataSource.apply(snapshot, animatingDifferences: true) { [weak self] in
+            self?.showIsLoading(false)
         }
     }
 }
@@ -112,6 +136,8 @@ extension SearchResultVC {
         }
     }
 }
+
+// MARK: - Layout
 
 extension SearchResultVC {
     func createLayout() -> UICollectionViewLayout {
