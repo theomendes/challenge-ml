@@ -36,6 +36,13 @@ final class SearchResultVC: BaseVC {
         return view
     }()
 
+    private let errorView: ErrorView = {
+        let view = ErrorView()
+        view.isHidden = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
     init(viewModel: SearchResultVM) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -49,18 +56,14 @@ final class SearchResultVC: BaseVC {
         super.setupUI()
         view.addSubview(collectionView)
         view.addSubview(loadingView)
+        view.addSubview(errorView)
 
         title = viewModel.query.text
         view.backgroundColor = .white
 
         configureDataSourceProvider()
 
-        Task {
-            showIsLoading(true)
-            await viewModel.fetchResults()
-
-            await applySnapshot(with: viewModel.sections)
-        }
+        getResults(isLoadingMore: false)
     }
 
     override func setupConstraints() {
@@ -74,8 +77,29 @@ final class SearchResultVC: BaseVC {
             loadingView.topAnchor.constraint(equalTo: collectionView.topAnchor),
             loadingView.trailingAnchor.constraint(equalTo: collectionView.trailingAnchor),
             loadingView.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor),
-            loadingView.leadingAnchor.constraint(equalTo: collectionView.leadingAnchor)
+            loadingView.leadingAnchor.constraint(equalTo: collectionView.leadingAnchor),
+
+            errorView.topAnchor.constraint(equalTo: collectionView.topAnchor),
+            errorView.trailingAnchor.constraint(equalTo: collectionView.trailingAnchor),
+            errorView.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor),
+            errorView.leadingAnchor.constraint(equalTo: collectionView.leadingAnchor)
         ])
+    }
+
+    private func getResults(isLoadingMore: Bool) {
+        Task {
+            showIsLoading(!isLoadingMore)
+            do {
+                try await viewModel.fetchResults()
+            } catch let error as SearchError {
+                showError(error)
+            } catch {
+                showError(.generic)
+            }
+
+
+            await applySnapshot(with: viewModel.sections)
+        }
     }
 
     @MainActor
@@ -84,6 +108,19 @@ final class SearchResultVC: BaseVC {
             self?.loadingView.alpha = loading ? 1 : 0
         } completion: { [weak self] _ in
             self?.loadingView.isHidden = !loading
+        }
+    }
+
+    @MainActor
+    private func showError(_ error: SearchError?) {
+        if let error {
+            errorView.setError(error)
+        }
+
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            self?.errorView.alpha = error == nil ? 0 : 1
+        } completion: { [weak self] _ in
+            self?.errorView.isHidden = error == nil
         }
     }
 }
@@ -99,7 +136,7 @@ extension SearchResultVC {
             snapshot.appendItems($0.items)
         }
 
-        dataSource.apply(snapshot, animatingDifferences: true) { [weak self] in
+        dataSource.apply(snapshot, animatingDifferences: false) { [weak self] in
             self?.showIsLoading(false)
         }
     }
@@ -108,6 +145,11 @@ extension SearchResultVC {
 // MARK: - UICollectionViewDelegate
 
 extension SearchResultVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let selectedItem = dataSource.itemIdentifier(for: indexPath) {
+            logger.log(level: .info, "Did display cell for item with ID: \(selectedItem.id)")
+        }
+    }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let selectedItem = dataSource.itemIdentifier(for: indexPath) else { return }
@@ -120,7 +162,22 @@ extension SearchResultVC: UICollectionViewDelegate {
 
 extension SearchResultVC: UICollectionViewDataSourcePrefetching {
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        if indexPaths.contains(where: shouldLoadMore) {
+            logger.log(level: .info, "Loading more results...")
+            getResults(isLoadingMore: true)
+        }
+    }
 
+    private func shouldLoadMore(for indexPath: IndexPath) -> Bool {
+        let isLastSection = (indexPath.section + 1) == self.dataSource.snapshot().numberOfSections
+
+        let section = self.dataSource.snapshot().sectionIdentifiers[indexPath.section]
+        let items = self.dataSource.snapshot().numberOfItems(inSection: section)
+
+        if isLastSection && ((indexPath.row + 1) >= (items - 2)) {
+            return true
+        }
+        return false
     }
 }
 
