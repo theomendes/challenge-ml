@@ -11,15 +11,19 @@ struct ProductDetailScreen: View {
     let item: SearchResultItem
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Novo")
-            Header(item: item) { url in
-                print(url.absoluteString)
-            }
+        ScrollView(.vertical) {
+            VStack(alignment: .leading) {
+                Text("Novo")
+                Header(item: item) { url in
+                    print(url.absoluteString)
+                }
 
-            priceView
+                priceView
+            }
+            .padding(.horizontal)
         }
-        .padding(.horizontal)
+        .scrollIndicators(.hidden)
+        .background(Color.white)
     }
 
     @ViewBuilder
