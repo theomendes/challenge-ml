@@ -15,6 +15,11 @@ extension SearchResponse {
         let salePrice: Price
         let officialStoreName: String?
         let shipping: Shipping
+        let permalink: URL
+        let condition: String
+        let installments: Installments
+        let attributes: [Attribute]
+        let seller: Seller
     }
 }
 
@@ -26,6 +31,11 @@ extension SearchResponse.Result: Decodable {
         case salePrice = "sale_price"
         case officialStoreName = "official_store_name"
         case shipping
+        case permalink
+        case condition
+        case installments
+        case attributes
+        case seller
     }
 }
 
@@ -58,5 +68,34 @@ extension SearchResponse.Result {
         let quantity: Int
         let amount: Decimal
         let rate: Decimal
+        let currency: String
+
+        enum CodingKeys: String, CodingKey {
+            case quantity
+            case amount
+            case rate
+            case currency = "currency_id"
+        }
+    }
+}
+
+extension SearchResponse.Result {
+    struct Attribute: Decodable {
+        let id: String
+        let name: String
+        let value: String
+
+        enum CodingKeys: String, CodingKey {
+            case id
+            case name
+            case value = "value_name"
+        }
+    }
+}
+
+extension SearchResponse.Result {
+    struct Seller: Decodable {
+        let id: Int
+        let nickname: String
     }
 }

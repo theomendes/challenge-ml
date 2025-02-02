@@ -54,10 +54,16 @@ extension SearchUseCase {
                     amount: result.salePrice.amount,
                     originalAmount: result.salePrice.regularAmount,
                     currency: result.salePrice.currency,
-                    formatedAmount: self?.formatCurrency(amount: result.salePrice.amount as NSNumber, currency: result.salePrice.currency) ?? ""
+                    formatedAmount: self?.formatCurrency(amount: result.salePrice.amount as NSNumber, currency: result.salePrice.currency) ?? "",
+                    installments: .init(
+                        quantity: result.installments.quantity,
+                        amount: result.installments.amount,
+                        currency: result.installments.currency,
+                        formatedAmount: self?.formatCurrency(amount: result.installments.amount as NSNumber, currency: result.installments.currency) ?? "")
                 ),
                 freeShipping: result.shipping.freeShipping,
-                officialStore: result.officialStoreName)
+                officialStore: result.officialStoreName,
+                permalink: result.permalink)
         }
         return [
             SearchResultSection(items: items)
