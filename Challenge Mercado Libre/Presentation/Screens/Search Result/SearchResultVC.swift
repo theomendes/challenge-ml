@@ -167,3 +167,10 @@ extension SearchResultVC {
         }, configuration: config)
     }
 }
+
+extension SearchResultVC {
+    func goToDetail(for item: SearchResultItem) {
+        let vc = ProductDetailVCWrapper(item: item)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
