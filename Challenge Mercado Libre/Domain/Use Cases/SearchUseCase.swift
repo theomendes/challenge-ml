@@ -5,6 +5,7 @@
 //  Created by Theo Mendes on 31/01/25.
 //
 
+import Alamofire
 import Foundation
 import OSLog
 
@@ -35,9 +36,19 @@ final class SearchUseCase: SearchResultUseCaseType {
         switch response.result {
         case .success(let result):
             logger.log(level: .info, "Returned \(result.paging.total) results for query: \(query)")
+            if result.paging.total == 0 {
+                throw SearchError.emptyResults(query: query)
+            }
             return convertToSections(result)
         case .failure(let error):
             logger.error("\(error.localizedDescription)")
+            if let internetError = verifyInternetError(error) {
+                throw internetError
+            } else {
+                if let data = response.data, let serviceError = try? decodeServiceError(data: data) {
+                    throw serviceError
+                }
+            }
             throw error
         }
     }
@@ -73,5 +84,25 @@ extension SearchUseCase {
     private func formatCurrency(amount: NSNumber, currency: String) -> String {
         numberFormatter.currencyCode = currency
         return numberFormatter.string(from: amount) ?? ""
+    }
+
+    private func decodeServiceError(data: Data) throws -> APIError {
+        return try JSONDecoder().decode(APIError.self, from: data)
+    }
+
+    private func verifyInternetError(_ error: AFError) -> SearchError? {
+        if error.isSessionTaskError {
+            return .internetConnection
+        }
+
+        if let underlyingError = error.underlyingError as? URLError {
+            switch underlyingError.code {
+            case .notConnectedToInternet, .networkConnectionLost, .timedOut:
+                return .internetConnection
+            default:
+                return nil
+            }
+        }
+        return nil
     }
 }
