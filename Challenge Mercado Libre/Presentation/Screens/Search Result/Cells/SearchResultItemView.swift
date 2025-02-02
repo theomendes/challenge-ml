@@ -84,16 +84,5 @@ struct SearchResultItemView: View {
 }
 
 #Preview {
-    SearchResultItemView(item: .init(
-        id: "MLB5097135428",
-        title: "Apple Watch Series 10",
-        thumbnail: URL(string: "http://http2.mlstatic.com/D_837437-MLA79083751040_092024-I.jpg")!,
-        price: .init(
-            amount: 5499,
-            originalAmount: 6799,
-            currency: "BRL",
-            formatedAmount: "R$ 5499"),
-        freeShipping: true,
-        officialStore: "Apple"
-    ))
+    SearchResultItemView(item: .mock)
 }
