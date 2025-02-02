@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import OSLog
 
 final class SearchResultVC: BaseVC {
     typealias DataSource = UICollectionViewDiffableDataSource<SearchResultSection, SearchResultItem>
@@ -13,6 +14,7 @@ final class SearchResultVC: BaseVC {
 
     private let viewModel: SearchResultVM
     private var dataSource: DataSource!
+    private let logger = Logger(subsystem: "com.theo.Challenge-Mercado-Libre", category: "SearchResultVC")
 
     private lazy var collectionView: UICollectionView = {
         let view = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
@@ -83,6 +85,11 @@ extension SearchResultVC {
 
 extension SearchResultVC: UICollectionViewDelegate {
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let selectedItem = dataSource.itemIdentifier(for: indexPath) else { return }
+        logger.log(level: .info, "Did select item with ID: \(selectedItem.id)")
+        goToDetail(for: selectedItem)
+    }
 }
 
 // MARK: - UICollectionViewDataSourcePrefetching
