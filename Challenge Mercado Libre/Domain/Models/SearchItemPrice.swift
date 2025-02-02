@@ -12,6 +12,7 @@ struct SearchItemPrice: Hashable {
     let originalAmount: Decimal?
     let currency: String
     let formatedAmount: String
+    let installments: Installments?
 
     var discountPercentage: Int? {
         guard let originalAmount, originalAmount > 0 else {
