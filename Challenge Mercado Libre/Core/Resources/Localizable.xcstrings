@@ -17,6 +17,22 @@
         }
       }
     },
+    "Characteristics" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Características"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caracteristicas"
+          }
+        }
+      }
+    },
     "Free shipping" : {
       "localizations" : {
         "es" : {
