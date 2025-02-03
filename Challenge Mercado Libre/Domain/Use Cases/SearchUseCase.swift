@@ -46,10 +46,10 @@ final class SearchUseCase: SearchResultUseCaseType {
                 throw internetError
             } else {
                 if let data = response.data, let serviceError = try? decodeServiceError(data: data) {
-                    throw serviceError
+                    throw SearchError.serviceError(code: serviceError.code, msmsg: serviceError.message)
                 }
             }
-            throw error
+            throw SearchError.generic
         }
     }
 }
@@ -91,10 +91,6 @@ extension SearchUseCase {
     }
 
     private func verifyInternetError(_ error: AFError) -> SearchError? {
-        if error.isSessionTaskError {
-            return .internetConnection
-        }
-
         if let underlyingError = error.underlyingError as? URLError {
             switch underlyingError.code {
             case .notConnectedToInternet, .networkConnectionLost, .timedOut:
