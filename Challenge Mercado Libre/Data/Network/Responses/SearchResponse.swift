@@ -11,6 +11,8 @@ struct SearchResponse {
     let siteId: String
     let paging: Paging
     let results: [Result]
+    let availableFilters: [FilterCategory]
+    let availableSorts: [SortBy]
 }
 
 extension SearchResponse: Decodable {
@@ -18,5 +20,7 @@ extension SearchResponse: Decodable {
         case siteId = "site_id"
         case paging
         case results
+        case availableFilters = "available_filters"
+        case availableSorts = "available_sorts"
     }
 }
