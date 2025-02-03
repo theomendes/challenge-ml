@@ -33,13 +33,19 @@ extension ProductDetailScreen {
                     .foregroundStyle(.black)
                     .padding(.bottom, 10)
 
-                ForEach(item.attributes) { attribute in
-                    HStack {
-                        Text(attribute.name)
-                            .bold()
-                        Text(attribute.value)
+                VStack(alignment: .leading, spacing: 10) {
+                    ForEach(item.attributes) { attribute in
+                        VStack(alignment: .leading) {
+                            Text(attribute.name)
+                                .textCase(.uppercase)
+                                .bold()
+                                .font(.caption)
+                                .foregroundStyle(.gray)
+                            Text(attribute.value)
+                                .foregroundStyle(.black)
+                        }
+                        .foregroundStyle(.black)
                     }
-                    .foregroundStyle(.black)
                 }
             }
         }

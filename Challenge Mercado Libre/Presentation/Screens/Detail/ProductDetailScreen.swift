@@ -14,9 +14,7 @@ struct ProductDetailScreen: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 Text("New")
-                Header(item: item) { url in
-                    print(url.absoluteString)
-                }
+                Header(item: item)
 
                 priceView
 

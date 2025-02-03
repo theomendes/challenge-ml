@@ -10,11 +10,9 @@ import SwiftUI
 extension ProductDetailScreen {
     struct Header: View {
         private let item: SearchResultItem
-        private var didTapShare: ((URL) -> Void)? = nil
 
-        init(item: SearchResultItem, didTapShare: ((URL) -> Void)? = nil) {
+        init(item: SearchResultItem) {
             self.item = item
-            self.didTapShare = didTapShare
         }
 
         var body: some View {
@@ -54,15 +52,13 @@ extension ProductDetailScreen {
                 .aspectRatio(1, contentMode: .fit)
                 .clipped()
                 .overlay(alignment: .bottomTrailing) {
-                    Button {
-                        didTapShare?(item.permalink)
-                    } label: {
+                    ShareLink(item: item.permalink) {
                         Image(systemName: "square.and.arrow.up")
+                            .frame(width: 40, height: 40)
+                            .background(Color.gray.opacity(0.2))
+                            .clipShape(Circle())
+                            .padding()
                     }
-                    .frame(width: 40, height: 40)
-                    .background(Color.gray.opacity(0.2))
-                    .clipShape(Circle())
-                    .padding()
                 }
             }
         }
