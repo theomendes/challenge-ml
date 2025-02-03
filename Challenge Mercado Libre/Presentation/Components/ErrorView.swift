@@ -100,6 +100,6 @@ final class ErrorView: UIView {
 
 #Preview {
     let view = ErrorView()
-    view.setError(.emptyResults(query: "sdsadsadjasdkjasda"))
+    view.setError(.serviceError(code: "403", msmsg: "Hello"))
     return view
 }

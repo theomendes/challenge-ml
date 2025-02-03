@@ -30,7 +30,7 @@ struct SearchResultItemView: View {
                 priceView
 
                 if item.freeShipping {
-                    Text("Frete grátis")
+                    Text("Free shipping")
                         .font(.caption)
                         .foregroundStyle(.black)
                 }
@@ -47,7 +47,7 @@ struct SearchResultItemView: View {
     var titleView: some View {
         VStack(alignment: .leading) {
             if let officialStore = item.officialStore, officialStore == "Apple" {
-                Text("Loja oficial \(officialStore)")
+                Text("Official store \(officialStore)")
                     .textCase(.uppercase)
                     .font(.caption2)
                     .fontWeight(.medium)
@@ -65,7 +65,7 @@ struct SearchResultItemView: View {
 
             if let officialStore = item.officialStore {
                 HStack {
-                    Text("Por \(officialStore)")
+                    Text("By \(officialStore)")
                         .foregroundStyle(.gray)
                     Image(systemName: "checkmark.seal.fill")
                         .foregroundStyle(.blue)

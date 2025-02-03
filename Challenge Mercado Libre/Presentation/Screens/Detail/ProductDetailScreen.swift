@@ -13,7 +13,7 @@ struct ProductDetailScreen: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
-                Text("Novo")
+                Text("New")
                 Header(item: item) { url in
                     print(url.absoluteString)
                 }
@@ -34,7 +34,7 @@ struct ProductDetailScreen: View {
                 .foregroundStyle(.black)
 
             if let installments = item.price.installments, installments.quantity > 0 {
-                Text("em \(installments.quantity)x \(installments.formatedAmount)")
+                Text("In \(installments.quantity)x \(installments.formatedAmount)")
                     .font(.subheadline)
                     .foregroundStyle(.green)
             }

@@ -41,9 +41,11 @@ final class QueryVC: BaseVC {
         field.textColor = .black
         field.font = UIFont.systemFont(ofSize: 16)
         field.attributedPlaceholder = NSAttributedString(
-            string: "Buscar produtos, marcas e muito mais…", attributes: [
+            string: NSLocalizedString("search_placeholder", comment: "Search field placeholder text"),
+            attributes: [
                 NSAttributedString.Key.foregroundColor: UIColor.lightGray
-            ])
+            ]
+        )
         field.layer.shadowColor = UIColor.black.cgColor
         field.layer.shadowOpacity = 0.2
         field.layer.shadowOffset = CGSize(width: 0, height: 1)

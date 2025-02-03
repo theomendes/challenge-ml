@@ -20,7 +20,7 @@ extension ProductDetailScreen {
         var body: some View {
             VStack(alignment: .leading) {
                 if let officialStore = item.officialStore, officialStore == "Apple" {
-                    Text("Loja oficial \(officialStore)")
+                    Text("Official store \(officialStore)")
                         .textCase(.uppercase)
                         .font(.caption2)
                         .fontWeight(.medium)

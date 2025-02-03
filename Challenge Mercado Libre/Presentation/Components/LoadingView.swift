@@ -27,7 +27,7 @@ final class LoadingView: UIView {
 
     private let loadingLabel: UILabel = {
         let label = UILabel()
-        label.text = "Buscando as melhores ofertas para você"
+        label.text = NSLocalizedString("searching_offers_text", comment: "Text for loading screen while searching offers")
         label.textColor = .black
         label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         label.textAlignment = .center

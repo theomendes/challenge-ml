@@ -18,13 +18,13 @@ extension SearchError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .internetConnection:
-            return "No internet connection. Please check your network and try again."
+            return NSLocalizedString("search_error_no_internet_connection", comment: "No internet connection error description")
         case .emptyResults(let query):
-            return "No results found for \"\(query)\".\nTry searching for something else."
+            return String(format: NSLocalizedString("search_error_no_results_found", comment: "No results found error description"), query)
         case .serviceError(let code, let message):
-            return "Service error (\(code)): \(message).\nPlease try again later."
+            return String(format: NSLocalizedString("search_error_service_error", comment: "Service error description"), code, message)
         case .generic:
-            return "An unknown error occurred."
+            return NSLocalizedString("search_error_generic_error", comment: "Generic error description")
         }
     }
 }
