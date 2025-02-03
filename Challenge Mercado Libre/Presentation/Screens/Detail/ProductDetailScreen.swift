@@ -19,6 +19,9 @@ struct ProductDetailScreen: View {
                 }
 
                 priceView
+
+                Description(item: item)
+                    .padding(.top)
             }
             .padding(.horizontal)
         }
