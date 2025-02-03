@@ -64,6 +64,13 @@ final class SearchResultVC: BaseVC {
         configureDataSourceProvider()
 
         getResults(isLoadingMore: false)
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: "line.3.horizontal.decrease.circle"),
+            style: .plain,
+            target: self,
+            action: #selector(didTapShowFilter)
+        )
     }
 
     override func setupConstraints() {
@@ -122,5 +129,10 @@ final class SearchResultVC: BaseVC {
         } completion: { [weak self] _ in
             self?.errorView.isHidden = error == nil
         }
+    }
+
+    @objc
+    private func didTapShowFilter() {
+        goToFilter(with: viewModel.filters)
     }
 }

@@ -12,4 +12,11 @@ extension SearchResultVC {
         let vc = ProductDetailVCWrapper(item: item)
         navigationController?.pushViewController(vc, animated: true)
     }
+
+    func goToFilter(with filters: [SearchResultFilter]) {
+        let vc = SearchFilterVC(filters: filters)
+        vc.delegate = self
+        let nav = UINavigationController(rootViewController: vc)
+        present(nav, animated: true)
+    }
 }

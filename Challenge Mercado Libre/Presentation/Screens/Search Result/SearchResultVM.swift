@@ -14,6 +14,7 @@ final class SearchResultVM {
     private(set) var limit = 20
     private(set) var offSet = 0
     private(set) var isLoading = false
+    @Published var filters = [SearchResultFilter]()
 
     init(useCase: SearchUseCase, query: Query) {
         self.useCase = useCase
@@ -24,16 +25,18 @@ final class SearchResultVM {
         guard !isLoading else { return }
 
         isLoading = true
-        let results = try await useCase.execute(
+        let result = try await useCase.execute(
             for: query.text,
             on: query.siteID,
             category: query.category,
             limit: limit,
             offset: offSet
         )
-        items.append(contentsOf: results)
 
-        offSet += limit
+        filters = result.filters
+        items.append(contentsOf: result.items)
+
+        offSet = result.offset
         isLoading = false
     }
 }
