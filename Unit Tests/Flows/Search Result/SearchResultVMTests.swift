@@ -24,7 +24,7 @@ struct SearchResultVMTests {
     func testingDefaultValues() async throws {
         #expect(viewModel.query.text == "Apple Watch")
         #expect(viewModel.query.siteID == "MLB")
-        #expect(viewModel.sections.isEmpty)
+        #expect(viewModel.items.isEmpty)
         #expect(viewModel.limit == 20)
         #expect(viewModel.offSet == 0)
         #expect(!viewModel.isLoading)
@@ -41,12 +41,11 @@ struct SearchResultVMTests {
 
         try await viewModel.fetchResults()
 
-        #expect(viewModel.sections.count == 1)
-        #expect(viewModel.sections.first?.items.count == 10)
+        #expect(viewModel.items.count == 10)
         #expect(viewModel.offSet == 20)
 
         try await viewModel.fetchResults()
-        #expect(viewModel.sections.count == 2)
+        #expect(viewModel.items.count == 20)
         #expect(viewModel.offSet == 40)
     }
 }

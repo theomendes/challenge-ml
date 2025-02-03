@@ -98,13 +98,12 @@ struct SearchUseCaseTests {
         let mock = Mock(url: url, ignoreQuery: true, contentType: .json, statusCode: 200, data: [.get: resultData])
         mock.register()
 
-        let sections = try await searchUseCase.execute(for: "Apple Watch", on: "", category: nil, limit: 10, offset: 0)
+        let items = try await searchUseCase.execute(for: "Apple Watch", on: "", category: nil, limit: 10, offset: 0)
 
-        #expect(sections.count == 1)
-        #expect(sections.first?.items.count == 10)
-        #expect(sections.first?.items.first?.id == "MLB5097135428")
-        #expect(sections.first?.items.first?.price.formatedAmount == "R$5,499")
-        #expect(sections.first?.items.first?.price.discountPercentage == 19)
+        #expect(items.count == 10)
+        #expect(items.first?.id == "MLB5097135428")
+        #expect(items.first?.price.formatedAmount == "R$5,499")
+        #expect(items.first?.price.discountPercentage == 19)
     }
 
     private func mockNetworkError(_ error: URLError) {
