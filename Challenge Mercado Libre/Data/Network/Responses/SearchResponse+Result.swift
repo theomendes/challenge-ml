@@ -17,7 +17,7 @@ extension SearchResponse {
         let shipping: Shipping
         let permalink: URL
         let condition: String
-        let installments: Installments
+        let installments: Installments?
         let attributes: [Attribute]
         let seller: Seller
     }
@@ -83,7 +83,7 @@ extension SearchResponse.Result {
     struct Attribute: Decodable {
         let id: String
         let name: String
-        let value: String
+        let value: String?
 
         enum CodingKeys: String, CodingKey {
             case id

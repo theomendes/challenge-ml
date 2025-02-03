@@ -57,7 +57,16 @@ final class SearchUseCase: SearchResultUseCaseType {
 extension SearchUseCase {
     private func convertToSections(_ response: SearchResponse) -> [SearchResultSection] {
         let items = response.results.map { [weak self] result in
-            SearchResultItem(
+            var installments: SearchItemPrice.Installments? = nil
+            if let installmentsData = result.installments {
+                installments = .init(
+                    quantity: installmentsData.quantity,
+                    amount: installmentsData.amount,
+                    currency: installmentsData.currency,
+                    formatedAmount: self?.formatCurrency(amount: installmentsData.amount as NSNumber, currency: installmentsData.currency) ?? ""
+                )
+            }
+            return SearchResultItem(
                 id: result.id,
                 title: result.title,
                 thumbnail: result.thumbnail,
@@ -66,11 +75,7 @@ extension SearchUseCase {
                     originalAmount: result.salePrice.regularAmount,
                     currency: result.salePrice.currency,
                     formatedAmount: self?.formatCurrency(amount: result.salePrice.amount as NSNumber, currency: result.salePrice.currency) ?? "",
-                    installments: .init(
-                        quantity: result.installments.quantity,
-                        amount: result.installments.amount,
-                        currency: result.installments.currency,
-                        formatedAmount: self?.formatCurrency(amount: result.installments.amount as NSNumber, currency: result.installments.currency) ?? "")
+                    installments: installments
                 ),
                 freeShipping: result.shipping.freeShipping,
                 officialStore: result.officialStoreName,
