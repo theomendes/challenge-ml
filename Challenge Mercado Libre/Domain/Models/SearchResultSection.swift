@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct SearchResultSection: Hashable {
-    let items: [SearchResultItem]
+enum SearchResultSection {
+    case main
 }

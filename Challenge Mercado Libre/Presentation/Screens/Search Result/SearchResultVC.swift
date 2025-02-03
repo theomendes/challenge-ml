@@ -98,7 +98,7 @@ final class SearchResultVC: BaseVC {
             }
 
 
-            await applySnapshot(with: viewModel.sections)
+            await applySnapshot(with: viewModel.items)
         }
     }
 

@@ -10,7 +10,7 @@ import Foundation
 final class SearchResultVM {
     private let useCase: SearchUseCase
     let query: Query
-    @Published var sections = [SearchResultSection]()
+    @Published var items = [SearchResultItem]()
     private(set) var limit = 20
     private(set) var offSet = 0
     private(set) var isLoading = false
@@ -31,7 +31,7 @@ final class SearchResultVM {
             limit: limit,
             offset: offSet
         )
-        sections.append(contentsOf: results)
+        items.append(contentsOf: results)
 
         offSet += limit
         isLoading = false

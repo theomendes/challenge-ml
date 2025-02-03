@@ -8,12 +8,10 @@
 import UIKit
 
 extension SearchResultVC {
-    func applySnapshot(with sections: [SearchResultSection]) async {
+    func applySnapshot(with items: [SearchResultItem]) async {
         var snapshot = Snapshot()
-        snapshot.appendSections(sections)
-        sections.forEach {
-            snapshot.appendItems($0.items)
-        }
+        snapshot.appendSections([.main])
+        snapshot.appendItems(items)
 
         dataSource.apply(snapshot, animatingDifferences: false) { [weak self] in
             self?.showIsLoading(false)

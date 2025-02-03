@@ -10,7 +10,7 @@ import Foundation
 import OSLog
 
 protocol SearchResultUseCaseType {
-    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> [SearchResultSection]
+    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> [SearchResultItem]
 }
 
 final class SearchUseCase: SearchResultUseCaseType {
@@ -29,7 +29,7 @@ final class SearchUseCase: SearchResultUseCaseType {
         self.repository = repository
     }
 
-    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> [SearchResultSection] {
+    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> [SearchResultItem] {
         logger.log(level: .info, "Starting execute for query: \(query), on site: \(siteID), with category: \(category ?? "nil"), limit: \(limit), offset: \(offset)")
         let response = await repository.getResults(query, siteID: siteID, category: category, limit: limit, offset: offset)
 
@@ -55,8 +55,8 @@ final class SearchUseCase: SearchResultUseCaseType {
 }
 
 extension SearchUseCase {
-    private func convertToSections(_ response: SearchResponse) -> [SearchResultSection] {
-        let items = response.results.map { [weak self] result in
+    private func convertToSections(_ response: SearchResponse) -> [SearchResultItem] {
+        return response.results.map { [weak self] result in
             var installments: SearchItemPrice.Installments? = nil
             if let installmentsData = result.installments {
                 installments = .init(
@@ -83,9 +83,6 @@ extension SearchUseCase {
                 attributes: result.attributes.map({ SearchResultItem.Attribute(id: $0.id, name: $0.name, value: $0.value ?? "") })
             )
         }
-        return [
-            SearchResultSection(items: items)
-        ]
     }
 
     private func formatCurrency(amount: NSNumber, currency: String) -> String {
