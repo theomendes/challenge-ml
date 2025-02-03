@@ -8,8 +8,8 @@
 import Foundation
 
 struct SearchItemPrice: Hashable {
-    let amount: Decimal
-    let originalAmount: Decimal?
+    let amount: Double
+    let originalAmount: Double?
     let currency: String
     let formatedAmount: String
     let installments: Installments?
@@ -18,8 +18,9 @@ struct SearchItemPrice: Hashable {
         guard let originalAmount, originalAmount > 0 else {
             return nil
         }
-        let discount = NSDecimalNumber(decimal: ((originalAmount - amount) / originalAmount * 100))
-        return discount.intValue
+
+        let discount = ((originalAmount - amount) / originalAmount) * 100
+        return Int(discount)
     }
 }
 

@@ -41,8 +41,8 @@ extension SearchResponse.Result: Decodable {
 
 extension SearchResponse.Result {
     struct Price: Decodable {
-        let amount: Decimal
-        let regularAmount: Decimal?
+        let amount: Double
+        let regularAmount: Double?
         let currency: String
 
         enum CodingKeys: String, CodingKey {
