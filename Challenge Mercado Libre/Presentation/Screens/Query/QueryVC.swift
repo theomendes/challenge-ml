@@ -8,9 +8,9 @@
 import UIKit
 
 final class QueryVC: BaseVC {
-    private let generator = UIImpactFeedbackGenerator(style: .medium)
+    let generator = UIImpactFeedbackGenerator(style: .medium)
 
-    private let scrollView: UIScrollView = {
+    let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.showsHorizontalScrollIndicator = false
@@ -32,7 +32,7 @@ final class QueryVC: BaseVC {
         return imageView
     }()
 
-    private var searchField: SearchTextField = {
+    var searchField: SearchTextField = {
         let field = SearchTextField()
         field.translatesAutoresizingMaskIntoConstraints = false
         field.layer.cornerRadius = 3
@@ -53,7 +53,7 @@ final class QueryVC: BaseVC {
         return field
     }()
 
-    private lazy var searchButton: MLButton = {
+    lazy var searchButton: MLButton = {
         var configuration = UIButton.Configuration.mercadoLibre()
         configuration.buttonSize = .large
 
@@ -128,103 +128,6 @@ final class QueryVC: BaseVC {
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
         ])
-    }
-}
-
-// MARK: - Actions
-
-extension QueryVC {
-    func searchWithQuery(_ query: String) {
-        @Injected(\.networkProvider) var networkProvider
-
-        let repository = SearchResultRepository(service: networkProvider.searchService)
-        let useCase = SearchUseCase(repository: repository)
-        let viewModel = SearchResultVM(
-            useCase: useCase,
-            query: .init(
-                text: query,
-                siteID: "MLB",
-                category: nil
-            ))
-        let vc = SearchResultVC(viewModel: viewModel)
-        navigationController?.pushViewController(vc, animated: true)
-    }
-
-    @objc private func searchButtonTapped() {
-        generator.impactOccurred()
-
-        if let text = searchField.text {
-            searchWithQuery(text)
-        }
-    }
-}
-
-// MARK: - Keyboard handling
-
-extension QueryVC {
-    private func setupKeyboardHandling() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-    }
-
-    @objc private func keyboardWillShow(notification: Notification) {
-        guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
-
-        let keyboardHeight = keyboardFrame.height
-        let bottomPadding: CGFloat = 20
-
-        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardHeight + bottomPadding, right: 0)
-        scrollView.scrollIndicatorInsets = scrollView.contentInset
-    }
-
-    @objc private func keyboardWillHide(notification: Notification) {
-        scrollView.contentInset = .zero
-        scrollView.scrollIndicatorInsets = .zero
-    }
-
-    @objc private func dismissKeyboard() {
-        view.endEditing(true)
-    }
-}
-
-// MARK: - UITextFieldDelegate
-
-extension QueryVC: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let currentText = textField.text ?? ""
-        let updatedText = (currentText as NSString).replacingCharacters(in: range, with: string)
-
-        searchButton.isEnabled = updatedText.count >= 3
-
-        return true
-    }
-
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        animateShadow(for: textField, to: 0.5)
-    }
-
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        animateShadow(for: textField, to: 0.2)
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-
-        if searchButton.isEnabled, let text = textField.text {
-            searchWithQuery(text)
-        }
-        return true
-    }
-
-    private func animateShadow(for textField: UITextField, to opacity: Float) {
-        let animation = CABasicAnimation(keyPath: "shadowOpacity")
-        animation.fromValue = textField.layer.shadowOpacity
-        animation.toValue = opacity
-        animation.duration = 0.3
-        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-
-        textField.layer.add(animation, forKey: "shadowOpacity")
-        textField.layer.shadowOpacity = opacity
     }
 }
 
