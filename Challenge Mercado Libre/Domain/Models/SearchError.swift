@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SearchError: Error {
+enum SearchError: Error, Equatable {
     case internetConnection
     case emptyResults(query: String)
     case serviceError(code: String, msmsg: String)
