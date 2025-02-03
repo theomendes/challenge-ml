@@ -79,7 +79,9 @@ extension SearchUseCase {
                 ),
                 freeShipping: result.shipping.freeShipping,
                 officialStore: result.officialStoreName,
-                permalink: result.permalink)
+                permalink: result.permalink,
+                attributes: result.attributes.map({ SearchResultItem.Attribute(id: $0.id, name: $0.name, value: $0.value ?? "") })
+            )
         }
         return [
             SearchResultSection(items: items)

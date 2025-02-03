@@ -15,6 +15,15 @@ struct SearchResultItem: Identifiable, Hashable {
     let freeShipping: Bool
     let officialStore: String?
     let permalink: URL
+    var attributes: [Attribute]
+}
+
+extension SearchResultItem {
+    struct Attribute: Identifiable, Hashable {
+        let id: String
+        let name: String
+        let value: String
+    }
 }
 
 extension SearchResultItem {
@@ -35,7 +44,12 @@ extension SearchResultItem {
                     formatedAmount: "R$ 549,90")),
             freeShipping: true,
             officialStore: "Apple",
-            permalink: URL(string: "https://www.mercadolivre.com.br/apple-watch-se-gps-caixa-estelar-de-aluminio-40-mm-pulseira-esportiva-estelar-pm/p/MLB27366066#wid=MLB5256403412&sid=unknown")!
+            permalink: URL(string: "https://www.mercadolivre.com.br/apple-watch-se-gps-caixa-estelar-de-aluminio-40-mm-pulseira-esportiva-estelar-pm/p/MLB27366066#wid=MLB5256403412&sid=unknown")!,
+            attributes: [
+                .init(id: "ALPHANUMERIC_MODEL", name: "Modelo alfanumérico", value: "A3001"),
+                .init(id: "BEZEL_COLOR", name: "Cor do bisel", value: "Preto"),
+                .init(id: "BRAND", name: "Marca", value: "Apple")
+            ]
         )
     }
 }
