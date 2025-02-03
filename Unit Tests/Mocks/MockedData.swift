@@ -14,4 +14,11 @@ enum MockedData {
         }
         return url
     }()
+
+    static let custom403Error: URL = {
+        guard let url = Bundle(for: MockSession.self).url(forResource: "403CustomError", withExtension: "json") else {
+            fatalError("Missing file: 403CustomError.json")
+        }
+        return url
+    }()
 }
