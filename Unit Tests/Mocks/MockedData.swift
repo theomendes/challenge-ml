@@ -15,9 +15,23 @@ enum MockedData {
         return url
     }()
 
+    static let searchServiceNoResult: URL = {
+        guard let url = Bundle(for: MockSession.self).url(forResource: "SearchServiceNoResultsResponse", withExtension: "json") else {
+            fatalError("Missing file: SearchServiceNoResultsResponse.json")
+        }
+        return url
+    }()
+
     static let custom403Error: URL = {
         guard let url = Bundle(for: MockSession.self).url(forResource: "403CustomError", withExtension: "json") else {
             fatalError("Missing file: 403CustomError.json")
+        }
+        return url
+    }()
+
+    static let decoding403Error: URL = {
+        guard let url = Bundle(for: MockSession.self).url(forResource: "403DecodingError", withExtension: "json") else {
+            fatalError("Missing file: 403DecodingError.json")
         }
         return url
     }()
