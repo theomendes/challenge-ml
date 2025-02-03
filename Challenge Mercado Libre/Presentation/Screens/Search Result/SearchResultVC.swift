@@ -13,10 +13,10 @@ final class SearchResultVC: BaseVC {
     typealias Snapshot = NSDiffableDataSourceSnapshot<SearchResultSection, SearchResultItem>
 
     private let viewModel: SearchResultVM
-    private var dataSource: DataSource!
-    private let logger = Logger(subsystem: "com.theo.Challenge-Mercado-Libre", category: "SearchResultVC")
+    var dataSource: DataSource!
+    let logger = Logger(subsystem: "com.theo.Challenge-Mercado-Libre", category: "SearchResultVC")
 
-    private lazy var collectionView: UICollectionView = {
+    lazy var collectionView: UICollectionView = {
         let view = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
         view.translatesAutoresizingMaskIntoConstraints = false
         view.showsVerticalScrollIndicator = false
@@ -86,7 +86,7 @@ final class SearchResultVC: BaseVC {
         ])
     }
 
-    private func getResults(isLoadingMore: Bool) {
+    func getResults(isLoadingMore: Bool) {
         Task {
             showIsLoading(!isLoadingMore)
             do {
@@ -103,7 +103,7 @@ final class SearchResultVC: BaseVC {
     }
 
     @MainActor
-    private func showIsLoading(_ loading: Bool) {
+    func showIsLoading(_ loading: Bool) {
         UIView.animate(withDuration: 0.3) { [weak self] in
             self?.loadingView.alpha = loading ? 1 : 0
         } completion: { [weak self] _ in
@@ -112,7 +112,7 @@ final class SearchResultVC: BaseVC {
     }
 
     @MainActor
-    private func showError(_ error: SearchError?) {
+    func showError(_ error: SearchError?) {
         if let error {
             errorView.setError(error)
         }
@@ -122,112 +122,5 @@ final class SearchResultVC: BaseVC {
         } completion: { [weak self] _ in
             self?.errorView.isHidden = error == nil
         }
-    }
-}
-
-// MARK: - Snapshot
-
-extension SearchResultVC {
-    @MainActor
-    private func applySnapshot(with sections: [SearchResultSection]) async {
-        var snapshot = Snapshot()
-        snapshot.appendSections(sections)
-        sections.forEach {
-            snapshot.appendItems($0.items)
-        }
-
-        dataSource.apply(snapshot, animatingDifferences: false) { [weak self] in
-            self?.showIsLoading(false)
-        }
-    }
-}
-
-// MARK: - UICollectionViewDelegate
-
-extension SearchResultVC: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if let selectedItem = dataSource.itemIdentifier(for: indexPath) {
-            logger.log(level: .info, "Did display cell for item with ID: \(selectedItem.id)")
-        }
-    }
-
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let selectedItem = dataSource.itemIdentifier(for: indexPath) else { return }
-        logger.log(level: .info, "Did select item with ID: \(selectedItem.id)")
-        goToDetail(for: selectedItem)
-    }
-}
-
-// MARK: - UICollectionViewDataSourcePrefetching
-
-extension SearchResultVC: UICollectionViewDataSourcePrefetching {
-    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
-        if indexPaths.contains(where: shouldLoadMore) {
-            logger.log(level: .info, "Loading more results...")
-            getResults(isLoadingMore: true)
-        }
-    }
-
-    private func shouldLoadMore(for indexPath: IndexPath) -> Bool {
-        let isLastSection = (indexPath.section + 1) == self.dataSource.snapshot().numberOfSections
-
-        let section = self.dataSource.snapshot().sectionIdentifiers[indexPath.section]
-        let items = self.dataSource.snapshot().numberOfItems(inSection: section)
-
-        if isLastSection && ((indexPath.row + 1) >= (items - 2)) {
-            return true
-        }
-        return false
-    }
-}
-
-// MARK: - DataSource
-extension SearchResultVC {
-    func configureDataSourceProvider() {
-        let itemRegistration = UICollectionView.CellRegistration<SwiftUIHostCVC<SearchResultItemView>, SearchResultItem> { [weak self] cell, indexPath, item in
-            cell.configure(with: .init(item: item), in: self)
-        }
-
-        dataSource = DataSource(collectionView: collectionView) { collectionView, indexPath, itemIdentifier in
-            collectionView.dequeueConfiguredReusableCell(using: itemRegistration, for: indexPath, item: itemIdentifier)
-        }
-    }
-}
-
-// MARK: - Layout
-
-extension SearchResultVC {
-    func createLayout() -> UICollectionViewLayout {
-        let config = UICollectionViewCompositionalLayoutConfiguration()
-        config.interSectionSpacing = 40
-
-        return UICollectionViewCompositionalLayout(sectionProvider: { sectionIndex, layoutEnvironment in
-            let itemSize = NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1.0),
-                heightDimension: .estimated(100)
-            )
-
-            let item = NSCollectionLayoutItem(layoutSize: itemSize)
-
-            let groupSize = NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1.0),
-                heightDimension: .estimated(100)
-            )
-
-            let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
-
-            let section = NSCollectionLayoutSection(group: group)
-            section.interGroupSpacing = 10
-            section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 16, bottom: 10, trailing: 16)
-
-            return section
-        }, configuration: config)
-    }
-}
-
-extension SearchResultVC {
-    func goToDetail(for item: SearchResultItem) {
-        let vc = ProductDetailVCWrapper(item: item)
-        navigationController?.pushViewController(vc, animated: true)
     }
 }
