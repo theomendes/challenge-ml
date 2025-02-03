@@ -15,7 +15,7 @@ struct SearchAPITests {
 
     @Test("Testing Search Query Parameters Without Category")
     func testingSearchQueryParametersWithoutCategory() async throws {
-        let api = SearchAPI(query: "Apple Watch", siteID: "MLB", category: nil, limit: 10, offset: 0)
+        let api = SearchAPI(query: "Apple Watch", siteID: "MLB", category: nil, limit: 10, offset: 0, filters: nil)
         let urlRequest = try api.asURLRequest()
 
         guard let queryItems = URLComponents(url: urlRequest.url!, resolvingAgainstBaseURL: false)?.queryItems else {
@@ -31,7 +31,7 @@ struct SearchAPITests {
 
     @Test("Testing Search Query Parameters With Category")
     func testingSearchQueryParametersWithCategory() async throws {
-        let api = SearchAPI(query: "Apple Watch", siteID: "MLB", category: "MLB1648", limit: 10, offset: 0)
+        let api = SearchAPI(query: "Apple Watch", siteID: "MLB", category: "MLB1648", limit: 10, offset: 0, filters: nil)
         let urlRequest = try api.asURLRequest()
 
         guard let queryItems = URLComponents(url: urlRequest.url!, resolvingAgainstBaseURL: false)?.queryItems else {

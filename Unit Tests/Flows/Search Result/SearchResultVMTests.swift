@@ -42,10 +42,32 @@ struct SearchResultVMTests {
         try await viewModel.fetchResults()
 
         #expect(viewModel.items.count == 10)
-        #expect(viewModel.offSet == 20)
+        #expect(viewModel.offSet == 10)
 
-        try await viewModel.fetchResults()
+        try await viewModel.fetchResults(loadMore: true)
         #expect(viewModel.items.count == 20)
-        #expect(viewModel.offSet == 40)
+        #expect(viewModel.offSet == 20)
+    }
+
+    @Test("Testing filter logic")
+    func testingFilterLogic() async throws {
+        viewModel.selectedFilter("asc", from: "sort")
+        #expect(viewModel.selectedFilters.count == 1)
+
+        viewModel.cleanSelectedFiltres()
+        #expect(viewModel.selectedFilters.isEmpty)
+
+        viewModel.selectedFilter("asc", from: "sort")
+        #expect(viewModel.selectedFilters.count == 1)
+
+        viewModel.applyFilters()
+        #expect(viewModel.appliedFilters.count == 1)
+        #expect(viewModel.selectedFilters.isEmpty)
+
+        viewModel.selectedFilter("asc", from: "sort")
+        #expect(viewModel.selectedFilters.count == 1)
+        viewModel.resetFilters()
+        #expect(viewModel.selectedFilters.isEmpty)
+        #expect(viewModel.appliedFilters.isEmpty)
     }
 }

@@ -15,8 +15,8 @@ final class SearchResultVM {
     private(set) var offSet = 0
     private(set) var isLoading = false
     @Published var filters = [SearchResultFilter]()
-    private var appliedFilters: [String: String] = [:]
-    private var selectedFilters: [String: String] = [:]
+    private(set) var appliedFilters: [String: String] = [:]
+    private(set) var selectedFilters: [String: String] = [:]
 
     init(useCase: SearchUseCase, query: Query) {
         self.useCase = useCase

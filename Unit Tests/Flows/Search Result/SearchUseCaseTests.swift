@@ -25,19 +25,19 @@ struct SearchUseCaseTests {
         mockNetworkError(URLError(.notConnectedToInternet))
 
         await #expect(throws: SearchError.internetConnection) {
-            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0)
+            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0, filters: nil)
         }
 
         mockNetworkError(URLError(.networkConnectionLost))
 
         await #expect(throws: SearchError.internetConnection) {
-            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0)
+            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0, filters: nil)
         }
 
         mockNetworkError(URLError(.timedOut))
 
         await #expect(throws: SearchError.internetConnection) {
-            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0)
+            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0, filters: nil)
         }
     }
 
@@ -50,7 +50,7 @@ struct SearchUseCaseTests {
         mock.register()
 
         do {
-            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0)
+            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0, filters: nil)
             Issue.record("Expected error but received success response")
         } catch let error as SearchError {
             switch error {
@@ -75,7 +75,7 @@ struct SearchUseCaseTests {
         mock.register()
 
         await #expect(throws: SearchError.generic) {
-            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0)
+            _ = try await searchUseCase.execute(for: "", on: "", category: nil, limit: 10, offset: 0, filters: nil)
         }
     }
 
@@ -87,7 +87,7 @@ struct SearchUseCaseTests {
         mock.register()
 
         await #expect(throws: SearchError.emptyResults(query: "sdaasdasdasdawdawsdwa")) {
-            _ = try await searchUseCase.execute(for: "sdaasdasdasdawdawsdwa", on: "", category: nil, limit: 10, offset: 0)
+            _ = try await searchUseCase.execute(for: "sdaasdasdasdawdawsdwa", on: "", category: nil, limit: 10, offset: 0, filters: nil)
         }
     }
 
@@ -98,12 +98,12 @@ struct SearchUseCaseTests {
         let mock = Mock(url: url, ignoreQuery: true, contentType: .json, statusCode: 200, data: [.get: resultData])
         mock.register()
 
-        let items = try await searchUseCase.execute(for: "Apple Watch", on: "", category: nil, limit: 10, offset: 0)
+        let result = try await searchUseCase.execute(for: "Apple Watch", on: "", category: nil, limit: 10, offset: 0, filters: nil)
 
-        #expect(items.count == 10)
-        #expect(items.first?.id == "MLB5097135428")
-        #expect(items.first?.price.formatedAmount == "R$5,499")
-        #expect(items.first?.price.discountPercentage == 19)
+        #expect(result.items.count == 10)
+        #expect(result.items.first?.productID == "MLB5097135428")
+        #expect(result.items.first?.price.formatedAmount == "R$5,499")
+        #expect(result.items.first?.price.discountPercentage == 19)
     }
 
     private func mockNetworkError(_ error: URLError) {
