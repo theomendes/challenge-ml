@@ -9,7 +9,7 @@ import Alamofire
 import Foundation
 
 protocol SearchServiceType: ServiceType {
-    func search(_ q: String, siteID: String, category: String?, limit: Int, offset: Int, cache: CachedResponseHandler) async -> DataResponse<SearchResponse, AFError>
+    func search(_ q: String, siteID: String, category: String?, limit: Int, offset: Int, filters: [String : String]?, cache: CachedResponseHandler) async -> DataResponse<SearchResponse, AFError>
 }
 
 final class SearchService: SearchServiceType {
@@ -19,8 +19,8 @@ final class SearchService: SearchServiceType {
         self.session = session
     }
 
-    func search(_ q: String, siteID: String, category: String? = nil, limit: Int, offset: Int, cache: CachedResponseHandler = .cache) async -> DataResponse<SearchResponse, AFError> {
-        let api = SearchAPI(query: q, siteID: siteID, category: category, limit: limit, offset: offset)
+    func search(_ q: String, siteID: String, category: String? = nil, limit: Int, offset: Int, filters: [String : String]?, cache: CachedResponseHandler = .cache) async -> DataResponse<SearchResponse, AFError> {
+        let api = SearchAPI(query: q, siteID: siteID, category: category, limit: limit, offset: offset, filters: filters)
 
         return await request(api, cache: cache)
     }

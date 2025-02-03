@@ -10,7 +10,7 @@ import Foundation
 import OSLog
 
 protocol SearchResultUseCaseType {
-    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> SearchResult
+    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int, filters: [String : String]?) async throws -> SearchResult
 }
 
 final class SearchUseCase: SearchResultUseCaseType {
@@ -29,9 +29,9 @@ final class SearchUseCase: SearchResultUseCaseType {
         self.repository = repository
     }
 
-    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int) async throws -> SearchResult {
+    func execute(for query: String, on siteID: String, category: String?, limit: Int, offset: Int, filters: [String : String]?) async throws -> SearchResult {
         logger.log(level: .info, "Starting execute for query: \(query), on site: \(siteID), with category: \(category ?? "nil"), limit: \(limit), offset: \(offset)")
-        let response = await repository.getResults(query, siteID: siteID, category: category, limit: limit, offset: offset)
+        let response = await repository.getResults(query, siteID: siteID, category: category, limit: limit, offset: offset, filters: filters)
 
         switch response.result {
         case .success(let result):

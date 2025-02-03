@@ -16,6 +16,7 @@ struct SearchAPI: RequestType {
     let category: String?
     let limit: Int
     let offset: Int
+    let filters: [String: String]?
 
     var path: String {
         "/sites/\(siteID)/search"
@@ -34,6 +35,10 @@ struct SearchAPI: RequestType {
 
         if let category = category {
             params["category"] = category
+        }
+
+        if let filters = filters {
+            params.merge(filters) { (_, new) in new }
         }
 
         return .parameters(parameters: params, encoding: URLEncoding.queryString)
