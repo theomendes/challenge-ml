@@ -74,7 +74,7 @@ extension SearchUseCase {
                 )
             }
             return SearchResultItem(
-                id: result.id,
+                productID: result.id,
                 title: result.title,
                 thumbnail: result.thumbnail,
                 price: .init(
@@ -105,7 +105,7 @@ extension SearchUseCase {
         }
 
         if !sortFilters.isEmpty {
-            filters.append(.init(id: "sortBy", name: NSLocalizedString("search_filter_sort_by", comment: "Sort by"), type: "sortBy", values: sortFilters))
+            filters.append(.init(id: "sort", name: NSLocalizedString("search_filter_sort_by", comment: "Sort by"), type: "sortBy", values: sortFilters))
         }
 
         for filter in response.availableFilters {

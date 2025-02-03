@@ -13,8 +13,6 @@ extension SearchResultVC {
         snapshot.appendSections([.main])
         snapshot.appendItems(items)
 
-        dataSource.apply(snapshot, animatingDifferences: false) { [weak self] in
-            self?.showIsLoading(false)
-        }
+        await dataSource.apply(snapshot, animatingDifferences: false)
     }
 }

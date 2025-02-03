@@ -8,7 +8,8 @@
 import Foundation
 
 struct SearchResultItem: Identifiable, Hashable {
-    let id: String
+    let id = UUID()
+    let productID: String
     let title: String
     let thumbnail: URL
     let price: SearchItemPrice

@@ -17,6 +17,13 @@ extension SearchResultVC {
         let vc = SearchFilterVC(filters: filters)
         vc.delegate = self
         let nav = UINavigationController(rootViewController: vc)
+        nav.presentationController?.delegate = self
         present(nav, animated: true)
+    }
+}
+
+extension SearchResultVC: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        viewModel.cleanSelectedFiltres()
     }
 }

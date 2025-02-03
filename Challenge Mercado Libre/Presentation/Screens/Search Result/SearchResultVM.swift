@@ -15,29 +15,55 @@ final class SearchResultVM {
     private(set) var offSet = 0
     private(set) var isLoading = false
     @Published var filters = [SearchResultFilter]()
+    private var appliedFilters: [String: String] = [:]
+    private var selectedFilters: [String: String] = [:]
 
     init(useCase: SearchUseCase, query: Query) {
         self.useCase = useCase
         self.query = query
     }
 
-    func fetchResults() async throws {
+    func fetchResults(loadMore: Bool = false) async throws {
         guard !isLoading else { return }
 
         isLoading = true
+
         let result = try await useCase.execute(
             for: query.text,
             on: query.siteID,
             category: query.category,
             limit: limit,
-            offset: offSet
+            offset: offSet,
+            filters: appliedFilters
         )
 
-        filters = result.filters
-        items.append(contentsOf: result.items)
+        if loadMore {
+            items.append(contentsOf: result.items)
+        } else {
+            self.filters = result.filters
+            items = result.items
+        }
 
-        offSet = result.offset
+        offSet += result.limit
         isLoading = false
+    }
+
+    func selectedFilter(_ filter: String, from sectionID: String) {
+        selectedFilters[sectionID] = filter
+    }
+
+    func resetFilters() {
+        selectedFilters.removeAll()
+        appliedFilters.removeAll()
+    }
+
+    func cleanSelectedFiltres() {
+        selectedFilters.removeAll()
+    }
+
+    func applyFilters() {
+        appliedFilters = selectedFilters
+        selectedFilters.removeAll()
     }
 }
 

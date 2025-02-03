@@ -12,7 +12,7 @@ final class SearchResultVC: BaseVC {
     typealias DataSource = UICollectionViewDiffableDataSource<SearchResultSection, SearchResultItem>
     typealias Snapshot = NSDiffableDataSourceSnapshot<SearchResultSection, SearchResultItem>
 
-    private let viewModel: SearchResultVM
+    let viewModel: SearchResultVM
     var dataSource: DataSource!
     let logger = Logger(subsystem: "com.theo.Challenge-Mercado-Libre", category: "SearchResultVC")
 
@@ -97,7 +97,7 @@ final class SearchResultVC: BaseVC {
         Task {
             showIsLoading(!isLoadingMore)
             do {
-                try await viewModel.fetchResults()
+                try await viewModel.fetchResults(loadMore: isLoadingMore)
             } catch let error as SearchError {
                 showError(error)
             } catch {
@@ -106,6 +106,7 @@ final class SearchResultVC: BaseVC {
 
 
             await applySnapshot(with: viewModel.items)
+            showIsLoading(false)
         }
     }
 

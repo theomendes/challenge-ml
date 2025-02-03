@@ -11,6 +11,7 @@ import UIKit
 protocol SearchFilterVCDelegate: AnyObject {
     func didSelectedFilter(_ filter: String, from sectionID: String)
     func applyFilters()
+    func resetFilters()
 }
 
 final class SearchFilterVC: BaseVC {
@@ -55,6 +56,11 @@ final class SearchFilterVC: BaseVC {
             style: .done,
             target: self,
             action: #selector(didTapApply))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            title: NSLocalizedString("search_filter_reset", comment: "Reset"),
+            style: .done,
+            target: self,
+            action: #selector(didTapReset))
     }
 
     override func setupConstraints() {
@@ -70,6 +76,13 @@ final class SearchFilterVC: BaseVC {
     @objc
     private func didTapApply() {
         delegate?.applyFilters()
+        dismiss(animated: true)
+    }
+
+    @objc
+    private func didTapReset() {
+        delegate?.resetFilters()
+        dismiss(animated: true)
     }
 }
 
