@@ -35,6 +35,12 @@
     },
     "Free shipping" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free shipping"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -204,6 +210,12 @@
     "search_filter_apply" : {
       "comment" : "Apply",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apply"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -221,6 +233,12 @@
     "search_filter_reset" : {
       "comment" : "Reset",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
