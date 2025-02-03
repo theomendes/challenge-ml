@@ -26,22 +26,22 @@ final class MLButton: UIButton {
         switch self.state {
         case .normal:
             foregroundColor = baseColor
-            backgroundColor = UIColor(named: "MLBlue") ?? .blue
+            backgroundColor = UIColor.mlBlue
         case [.highlighted]:
             foregroundColor = baseColor
-            backgroundColor = (UIColor(named: "MLBlue") ?? .blue).withAlphaComponent(0.3)
+            backgroundColor = UIColor.mlBlue.withAlphaComponent(0.3)
         case .selected:
             foregroundColor = .white
             backgroundColor = baseColor
         case [.selected, .highlighted]:
             foregroundColor = .white
-            backgroundColor = (UIColor(named: "MLBlue") ?? .blue).withAlphaComponent(0.3)
+            backgroundColor = UIColor.mlBlue.withAlphaComponent(0.3)
         case .disabled:
             foregroundColor = .white
-            backgroundColor = (UIColor(named: "MLBlue") ?? .blue).withAlphaComponent(0.3)
+            backgroundColor = UIColor.mlBlue.withAlphaComponent(0.3)
         default:
             foregroundColor = baseColor
-            backgroundColor = UIColor(named: "MLBlue") ?? .blue
+            backgroundColor = UIColor.mlBlue
         }
 
         background.backgroundColor = backgroundColor
