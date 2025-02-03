@@ -103,7 +103,7 @@ struct SearchUseCaseTests {
         #expect(sections.count == 1)
         #expect(sections.first?.items.count == 10)
         #expect(sections.first?.items.first?.id == "MLB5097135428")
-        #expect(sections.first?.items.first?.price.formatedAmount == "R$ 5.499")
+        #expect(sections.first?.items.first?.price.formatedAmount == "R$5,499")
         #expect(sections.first?.items.first?.price.discountPercentage == 19)
     }
 

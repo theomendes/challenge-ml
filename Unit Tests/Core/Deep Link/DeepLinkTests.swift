@@ -14,7 +14,7 @@ struct DeepLinkTests {
 
     @Test("Test deep link with mapped route - search")
     func testingDeepLinkWithSuccessfulRoute() async throws {
-        let url = URL(string: "challenge-ml:search?q=Apple%20Watch&siteId=MLB&category=MLB135384")!
+        let url = URL(string: "challenge-ml://search?q=Apple%20Watch&siteId=MLB&category=MLB135384")!
         let deepLink = DeepLink(url: url)
 
         switch deepLink {
@@ -29,7 +29,7 @@ struct DeepLinkTests {
 
     @Test("Test deep link with mapped route - search - missing category")
     func testingDeepLinkWithSuccessfulRouteMissingCategory() async throws {
-        let url = URL(string: "challenge-ml:search?q=Apple%20Watch&siteId=MLB")!
+        let url = URL(string: "challenge-ml://search?q=Apple%20Watch&siteId=MLB")!
         let deepLink = DeepLink(url: url)
 
         switch deepLink {
@@ -44,7 +44,7 @@ struct DeepLinkTests {
 
     @Test("Test deep link with missing query")
     func testingDeepLinkWithMissingQuery() async throws {
-        let url = URL(string: "challenge-ml:search?siteId=MLB")!
+        let url = URL(string: "challenge-ml://search?siteId=MLB")!
         let deepLink = DeepLink(url: url)
         
         #expect(deepLink == nil)
@@ -52,7 +52,7 @@ struct DeepLinkTests {
 
     @Test("Test deep link with missing site ID")
     func testingDeepLinkWithMissingSiteId() async throws {
-        let url = URL(string: "challenge-ml:search?q=Apple%20Watch")!
+        let url = URL(string: "challenge-ml://search?q=Apple%20Watch")!
         let deepLink = DeepLink(url: url)
 
         #expect(deepLink == nil)
@@ -60,7 +60,7 @@ struct DeepLinkTests {
 
     @Test("Test deep link with invalid route")
     func testingDeepLinkWithInvalidRoute() async throws {
-        let url = URL(string: "challenge-ml:product?id=MLB5097135428")!
+        let url = URL(string: "challenge-ml://product?id=MLB5097135428")!
         let deepLink = DeepLink(url: url)
 
         #expect(deepLink == nil)
