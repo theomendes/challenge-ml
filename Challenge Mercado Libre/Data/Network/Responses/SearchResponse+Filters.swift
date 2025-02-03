@@ -20,6 +20,6 @@ extension SearchResponse {
     struct FilterValue: Decodable {
         let id: String
         let name: String
-        let results: Int
+        let results: Int?
     }
 }
