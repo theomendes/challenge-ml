@@ -18,6 +18,8 @@
         }
       ]
     },
+    "language" : "en",
+    "region" : "US",
     "targetForVariableExpansion" : {
       "containerPath" : "container:Challenge Mercado Libre.xcodeproj",
       "identifier" : "A9C1AEC32D4D65F00089600E",
@@ -26,19 +28,11 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
+      "parallelizable" : false,
       "target" : {
         "containerPath" : "container:Challenge Mercado Libre.xcodeproj",
         "identifier" : "A9C1AED42D4D65F30089600E",
         "name" : "Unit Tests"
-      }
-    },
-    {
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:Challenge Mercado Libre.xcodeproj",
-        "identifier" : "A9C1AEDE2D4D65F30089600E",
-        "name" : "UI Tests"
       }
     }
   ],
