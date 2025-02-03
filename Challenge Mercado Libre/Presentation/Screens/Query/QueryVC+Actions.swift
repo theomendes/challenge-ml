@@ -8,6 +8,7 @@
 import Foundation
 
 extension QueryVC {
+    @MainActor
     func searchWithQuery(_ query: String) {
         @Injected(\.networkProvider) var networkProvider
 
