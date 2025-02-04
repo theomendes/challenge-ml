@@ -89,7 +89,7 @@ Para mostrar las imágenes de los productos, fue necesario habilitar **Allow Arb
 Aquí tienes algunas capturas de pantalla de la aplicación:
 
 <p align="center">
-  <img src="/.imgs/Query.png" width="100">
-  <img src="/.imgs/Result.png" width="100">
-  <img src="/.imgs/Detail.png" width="100">
+  <img src=".imgs/Query.png" width="200">
+  <img src=".imgs/Result.png" width="200">
+  <img src=".imgs/Detail.png" width="200">
 </p>
