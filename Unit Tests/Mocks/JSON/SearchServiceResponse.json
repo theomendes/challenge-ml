@@ -1,0 +1,4546 @@
+{
+    "site_id": "MLB",
+    "country_default_time_zone": "GMT-03:00",
+    "query": "Apple Watch",
+    "paging": {
+        "total": 1265,
+        "primary_results": 1000,
+        "offset": 0,
+        "limit": 10
+    },
+    "results": [
+        {
+            "id": "MLB5097135428",
+            "title": "Apple Watch Series 10 Gps + Cellular  Caixa Preta Brilhante De Alumínio  42 Mm  Pulseira Esportiva Preta  P/m - Distribuidor Autorizado",
+            "condition": "new",
+            "thumbnail_id": "837437-MLA79083751040_092024",
+            "catalog_product_id": "MLB1040656040",
+            "listing_type_id": "gold_pro",
+            "sanitized_title": "",
+            "permalink": "https://www.mercadolivre.com.br/apple-watch-series-10-gps-cellular-caixa-preta-brilhante-de-aluminio-42-mm-pulseira-esportiva-preta-pm-distribuidor-autorizado/p/MLB1040656040#wid=MLB5097135428&sid=unknown",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "thumbnail": "http://http2.mlstatic.com/D_837437-MLA79083751040_092024-I.jpg",
+            "currency_id": "BRL",
+            "order_backend": 1,
+            "price": 5499,
+            "original_price": 6799,
+            "sale_price": {
+                "price_id": "",
+                "amount": 5499,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [],
+                    "start_time": null,
+                    "end_time": null
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": 6799,
+                "type": "standard",
+                "metadata": {}
+            },
+            "available_quantity": 1,
+            "official_store_id": 2162,
+            "official_store_name": "Apple",
+            "use_thumbnail_id": true,
+            "accepts_mercadopago": true,
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "fulfillment",
+                "mode": "me2",
+                "tags": [
+                    "fulfillment",
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2044-09-27T04:00:00.000Z",
+            "seller": {
+                "id": 480263032,
+                "nickname": "Mercado Livre Eletronicos"
+            },
+            "address": {
+                "state_id": "BR-SP",
+                "state_name": "São Paulo",
+                "city_id": "QlItU1BDYWphbWFy",
+                "city_name": "Cajamar"
+            },
+            "attributes": [
+                {
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": "42479795",
+                    "value_name": "A3001",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "42479795",
+                            "name": "A3001",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BEZEL_COLOR",
+                    "name": "Cor do bisel",
+                    "value_id": "52049",
+                    "value_name": "Preto",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "52049",
+                            "name": "Preto",
+                            "struct": null,
+                            "source": 8748668969142
+                        }
+                    ],
+                    "source": 8748668969142,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "CASE_COLOR",
+                    "name": "Cor da caixa",
+                    "value_id": "199112",
+                    "value_name": "Preto-azeviche",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "199112",
+                            "name": "Preto-azeviche",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "Código universal de produto",
+                    "value_id": null,
+                    "value_name": "195949819025",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "195949819025",
+                            "struct": null,
+                            "source": 385122562515662
+                        }
+                    ],
+                    "source": 8748668969142,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "24700844",
+                    "value_name": "Series 10",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "24700844",
+                            "name": "Series 10",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "42479794",
+                    "value_name": "Watch (GPS + Cellular)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "42479794",
+                            "name": "Watch (GPS + Cellular)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "PACKAGE_LENGTH",
+                    "name": "Comprimento da embalagem",
+                    "value_id": null,
+                    "value_name": "24.1 cm",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 24.1,
+                        "unit": "cm"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "24.1 cm",
+                            "struct": {
+                                "unit": "cm",
+                                "number": 24.1
+                            },
+                            "source": 4333789534002961
+                        }
+                    ],
+                    "source": 4333789534002961,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "PACKAGE_WEIGHT",
+                    "name": "Peso da embalagem",
+                    "value_id": null,
+                    "value_name": "270 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 270,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "270 g",
+                            "struct": {
+                                "number": 270,
+                                "unit": "g"
+                            },
+                            "source": 4333789534002961
+                        }
+                    ],
+                    "source": 4333789534002961,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WEIGHT",
+                    "name": "Peso",
+                    "value_id": "42685862",
+                    "value_name": "29.3 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 29.3,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": "42685862",
+                            "name": "29.3 g",
+                            "struct": {
+                                "number": 29.3,
+                                "unit": "g"
+                            },
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WRISTBAND_COLOR",
+                    "name": "Cor da pulseira",
+                    "value_id": "2826196",
+                    "value_name": "Preta",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2826196",
+                            "name": "Preta",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                }
+            ],
+            "installments": {
+                "quantity": 10,
+                "amount": 549.9,
+                "rate": 0,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": true,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": "XCUU14244"
+        },
+        {
+            "id": "MLB3958223191",
+            "title": "Apple Watch Series 7 45mm Gps Original Nf Garantia Leia Anun",
+            "condition": "new",
+            "thumbnail_id": "730252-MLB81772726672_012025",
+            "catalog_product_id": "MLB20748384",
+            "listing_type_id": "gold_pro",
+            "sanitized_title": "",
+            "permalink": "https://produto.mercadolivre.com.br/MLB-3958223191-apple-watch-series-7-45mm-gps-original-nf-garantia-leia-anun-_JM",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "variation_id": "182800903602",
+            "thumbnail": "http://http2.mlstatic.com/D_730252-MLB81772726672_012025-O.jpg",
+            "currency_id": "BRL",
+            "order_backend": 2,
+            "price": 2575.51,
+            "original_price": 3140.87,
+            "sale_price": {
+                "price_id": "",
+                "amount": 2575.51,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [
+                        "channel_marketplace"
+                    ],
+                    "start_time": "2025-01-23T03:00:00Z",
+                    "end_time": "2025-02-22T02:59:59Z"
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": 3140.87,
+                "type": "promotion",
+                "metadata": {
+                    "promotion_type": "custom",
+                    "promotion_id": "OFFER-MLB3958223191-11267875506"
+                }
+            },
+            "available_quantity": 1,
+            "official_store_id": null,
+            "use_thumbnail_id": false,
+            "accepts_mercadopago": true,
+            "variation_filters": [
+                "CASE_COLOR",
+                "WRISTBAND_COLOR",
+                "BEZEL_COLOR"
+            ],
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "xd_drop_off",
+                "mode": "me2",
+                "tags": [
+                    "self_service_in",
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2045-01-17T04:00:00.000Z",
+            "seller": {
+                "id": 236709687,
+                "nickname": "BARON TECH"
+            },
+            "address": {
+                "state_id": "BR-PR",
+                "state_name": "Paraná",
+                "city_id": "TUxCQ0NSVTVkMjQ0",
+                "city_name": "Cruzeiro do Oeste"
+            },
+            "attributes": [
+                {
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": null,
+                    "value_name": "MKMY3LL/A",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "MKMY3LL/A",
+                            "struct": null,
+                            "source": 8021611602487823
+                        }
+                    ],
+                    "source": 8021611602487823,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 8021611602487823
+                        }
+                    ],
+                    "source": 8021611602487823,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 8021611602487823
+                        }
+                    ],
+                    "source": 8021611602487823,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "72",
+                    "value_name": "Series 7",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "72",
+                            "name": "Series 7",
+                            "struct": null,
+                            "source": 8021611602487823
+                        }
+                    ],
+                    "source": 8021611602487823,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": null,
+                    "value_name": "A2473",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "A2473",
+                            "struct": null,
+                            "source": 8021611602487823
+                        }
+                    ],
+                    "source": 8021611602487823,
+                    "value_type": "string"
+                }
+            ],
+            "variations_data": {
+                "182800903602": {
+                    "thumbnail": "http://http2.mlstatic.com/D_730252-MLB81772726672_012025-O.jpg",
+                    "ratio": "0.85",
+                    "name": "Preto",
+                    "pictures_qty": 6,
+                    "price": 3140.87,
+                    "user_product_id": "MLBU2973614345",
+                    "attributes": [
+                        {
+                            "id": "GTIN",
+                            "name": "Código universal de produto",
+                            "value_name": "string",
+                            "value_type": "194252593240"
+                        }
+                    ],
+                    "attribute_combinations": [
+                        {
+                            "id": "CASE_COLOR",
+                            "name": "Cor da caixa",
+                            "value_id": "3002109",
+                            "value_name": "Midnight",
+                            "value_struct": null,
+                            "values": null
+                        },
+                        {
+                            "id": "WRISTBAND_COLOR",
+                            "name": "Cor da pulseira",
+                            "value_id": "3002109",
+                            "value_name": "Midnight",
+                            "value_struct": null,
+                            "values": null
+                        },
+                        {
+                            "id": "BEZEL_COLOR",
+                            "name": "Cor do bisel",
+                            "value_id": "52049",
+                            "value_name": "Preto",
+                            "value_struct": null,
+                            "values": null
+                        }
+                    ]
+                }
+            },
+            "installments": {
+                "quantity": 10,
+                "amount": 257.55,
+                "rate": 0,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": false,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": null
+        },
+        {
+            "id": "MLB3960519187",
+            "title": "Apple Watch Se Gps (2da Gen)  - Caixa Meia-noite De Alumínio 44 Mm - Pulseira Esportiva Meia-noite - Padrão",
+            "condition": "new",
+            "thumbnail_id": "872361-MLU77112442380_062024",
+            "catalog_product_id": "MLB19679759",
+            "listing_type_id": "gold_pro",
+            "sanitized_title": "",
+            "permalink": "https://www.mercadolivre.com.br/apple-watch-se-gps-2da-gen-caixa-meia-noite-de-aluminio-44-mm-pulseira-esportiva-meia-noite-padro/p/MLB19679759#wid=MLB3960519187&sid=unknown",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "thumbnail": "http://http2.mlstatic.com/D_872361-MLU77112442380_062024-I.jpg",
+            "currency_id": "BRL",
+            "order_backend": 3,
+            "price": 2079,
+            "original_price": null,
+            "sale_price": {
+                "price_id": "",
+                "amount": 2079,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [],
+                    "start_time": null,
+                    "end_time": null
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": null,
+                "type": "standard",
+                "metadata": {}
+            },
+            "available_quantity": 1,
+            "official_store_id": null,
+            "use_thumbnail_id": true,
+            "accepts_mercadopago": true,
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "drop_off",
+                "mode": "me2",
+                "tags": [
+                    "self_service_in",
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2045-01-20T04:00:00.000Z",
+            "seller": {
+                "id": 2094458668,
+                "nickname": "JD20241112150223"
+            },
+            "address": {
+                "state_id": "BR-SP",
+                "state_name": "São Paulo",
+                "city_id": "BR-SP-44",
+                "city_name": "São Paulo"
+            },
+            "attributes": [
+                {
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": "20356611",
+                    "value_name": "A2723",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "20356611",
+                            "name": "A2723",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "CASE_COLOR",
+                    "name": "Cor da caixa",
+                    "value_id": "13291815",
+                    "value_name": "Meia-noite",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "13291815",
+                            "name": "Meia-noite",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "Código universal de produto",
+                    "value_id": null,
+                    "value_name": "195949644184",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "195949644184",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "36125434",
+                    "value_name": "SE - 2 Geração",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "36125434",
+                            "name": "SE - 2 Geração",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "6784553",
+                    "value_name": "Watch (GPS)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "6784553",
+                            "name": "Watch (GPS)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "WEIGHT",
+                    "name": "Peso",
+                    "value_id": "8625025",
+                    "value_name": "36 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 36,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": "8625025",
+                            "name": "36 g",
+                            "struct": {
+                                "number": 36,
+                                "unit": "g"
+                            },
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WRISTBAND_COLOR",
+                    "name": "Cor da pulseira",
+                    "value_id": "13288003",
+                    "value_name": "Meia-noite/Padrão",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "13288003",
+                            "name": "Meia-noite/Padrão",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                }
+            ],
+            "installments": {
+                "quantity": 10,
+                "amount": 207.9,
+                "rate": 0,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": true,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": null
+        },
+        {
+            "id": "MLB5097187894",
+            "title": "Apple Watch Series 10 Gps  Caixa Preta Brilhante De Alumínio  46 Mm  Pulseira Esportiva Preta  M/g - Distribuidor Autorizado",
+            "condition": "new",
+            "thumbnail_id": "771841-MLA79082670326_092024",
+            "catalog_product_id": "MLB1040694303",
+            "listing_type_id": "gold_pro",
+            "sanitized_title": "",
+            "permalink": "https://www.mercadolivre.com.br/apple-watch-series-10-gps-caixa-preta-brilhante-de-aluminio-46-mm-pulseira-esportiva-preta-mg-distribuidor-autorizado/p/MLB1040694303#wid=MLB5097187894&sid=unknown",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "thumbnail": "http://http2.mlstatic.com/D_771841-MLA79082670326_092024-I.jpg",
+            "currency_id": "BRL",
+            "order_backend": 4,
+            "price": 5899,
+            "original_price": null,
+            "sale_price": {
+                "price_id": "",
+                "amount": 5899,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [],
+                    "start_time": null,
+                    "end_time": null
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": null,
+                "type": "standard",
+                "metadata": {}
+            },
+            "available_quantity": 1,
+            "official_store_id": 2162,
+            "official_store_name": "Apple",
+            "use_thumbnail_id": true,
+            "accepts_mercadopago": true,
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "fulfillment",
+                "mode": "me2",
+                "tags": [
+                    "fulfillment",
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2044-09-27T04:00:00.000Z",
+            "seller": {
+                "id": 480263032,
+                "nickname": "Mercado Livre Eletronicos"
+            },
+            "address": {
+                "state_id": "BR-SP",
+                "state_name": "São Paulo",
+                "city_id": "QlItU1BDYWphbWFy",
+                "city_name": "Cajamar"
+            },
+            "attributes": [
+                {
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": "42533071",
+                    "value_name": "A2999",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "42533071",
+                            "name": "A2999",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BEZEL_COLOR",
+                    "name": "Cor do bisel",
+                    "value_id": "52049",
+                    "value_name": "Preto",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "52049",
+                            "name": "Preto",
+                            "struct": null,
+                            "source": 8748668969142
+                        }
+                    ],
+                    "source": 8748668969142,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "CASE_COLOR",
+                    "name": "Cor da caixa",
+                    "value_id": "199112",
+                    "value_name": "Preto-azeviche",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "199112",
+                            "name": "Preto-azeviche",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "Código universal de produto",
+                    "value_id": null,
+                    "value_name": "195949780646",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "195949780646",
+                            "struct": null,
+                            "source": 385122562515662
+                        }
+                    ],
+                    "source": 8748668969142,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "24700844",
+                    "value_name": "Series 10",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "24700844",
+                            "name": "Series 10",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "6784553",
+                    "value_name": "Watch (GPS)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "6784553",
+                            "name": "Watch (GPS)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "PACKAGE_LENGTH",
+                    "name": "Comprimento da embalagem",
+                    "value_id": null,
+                    "value_name": "24.1 cm",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 24.1,
+                        "unit": "cm"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "24.1 cm",
+                            "struct": {
+                                "unit": "cm",
+                                "number": 24.1
+                            },
+                            "source": 4333789534002961
+                        }
+                    ],
+                    "source": 4333789534002961,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "PACKAGE_WEIGHT",
+                    "name": "Peso da embalagem",
+                    "value_id": null,
+                    "value_name": "290 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 290,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "290 g",
+                            "struct": {
+                                "unit": "g",
+                                "number": 290
+                            },
+                            "source": 4333789534002961
+                        }
+                    ],
+                    "source": 4333789534002961,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WEIGHT",
+                    "name": "Peso",
+                    "value_id": "16940348",
+                    "value_name": "36.4 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 36.4,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": "16940348",
+                            "name": "36.4 g",
+                            "struct": {
+                                "number": 36.4,
+                                "unit": "g"
+                            },
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WRISTBAND_COLOR",
+                    "name": "Cor da pulseira",
+                    "value_id": "52049",
+                    "value_name": "Preto",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "52049",
+                            "name": "Preto",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                }
+            ],
+            "installments": {
+                "quantity": 10,
+                "amount": 589.9,
+                "rate": 0,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": true,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": "UITH14394"
+        },
+        {
+            "id": "MLB5256403412",
+            "title": "Apple Watch Se Gps  Caixa Estelar De Alumínio  40 Mm  Pulseira Esportiva Estelar  P/m",
+            "condition": "new",
+            "thumbnail_id": "948336-MLU77339929425_062024",
+            "catalog_product_id": "MLB27366066",
+            "listing_type_id": "gold_pro",
+            "sanitized_title": "",
+            "permalink": "https://www.mercadolivre.com.br/apple-watch-se-gps-caixa-estelar-de-aluminio-40-mm-pulseira-esportiva-estelar-pm/p/MLB27366066#wid=MLB5256403412&sid=unknown",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "thumbnail": "http://http2.mlstatic.com/D_948336-MLU77339929425_062024-I.jpg",
+            "currency_id": "BRL",
+            "order_backend": 5,
+            "price": 1900,
+            "original_price": null,
+            "sale_price": {
+                "price_id": "",
+                "amount": 1900,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [],
+                    "start_time": null,
+                    "end_time": null
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": null,
+                "type": "standard",
+                "metadata": {}
+            },
+            "available_quantity": 1,
+            "official_store_id": null,
+            "use_thumbnail_id": true,
+            "accepts_mercadopago": true,
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "drop_off",
+                "mode": "me2",
+                "tags": [
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2045-01-09T04:00:00.000Z",
+            "seller": {
+                "id": 630510063,
+                "nickname": "MEFE639668"
+            },
+            "address": {
+                "state_id": "BR-MS",
+                "state_name": "Mato Grosso do Sul",
+                "city_id": "TUxCQ0NBTTFiNzU5",
+                "city_name": "Campo Grande"
+            },
+            "attributes": [
+                {
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": "20891654",
+                    "value_name": "A2722",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "20891654",
+                            "name": "A2722",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BEZEL_COLOR",
+                    "name": "Cor do bisel",
+                    "value_id": "976",
+                    "value_name": "Prata",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "976",
+                            "name": "Prata",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "CASE_COLOR",
+                    "name": "Cor da caixa",
+                    "value_id": "11157705",
+                    "value_name": "Estelar",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "11157705",
+                            "name": "Estelar",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "DETAILED_MODEL",
+                    "name": "Modelo detalhado",
+                    "value_id": "24638530",
+                    "value_name": "Apple Watch SE (2nd Generation, GPS)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "24638530",
+                            "name": "Apple Watch SE (2nd Generation, GPS)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "Código universal de produto",
+                    "value_id": null,
+                    "value_name": "195949643101",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "195949643101",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "54939",
+                    "value_name": "Series 2",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "54939",
+                            "name": "Series 2",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "24645452",
+                    "value_name": "Watch SE (GPS) 2nd Generation",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "24645452",
+                            "name": "Watch SE (GPS) 2nd Generation",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "WEIGHT",
+                    "name": "Peso",
+                    "value_id": "22440725",
+                    "value_name": "26.4 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 26.4,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": "22440725",
+                            "name": "26.4 g",
+                            "struct": {
+                                "number": 26.4,
+                                "unit": "g"
+                            },
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WRISTBAND_COLOR",
+                    "name": "Cor da pulseira",
+                    "value_id": "11157705",
+                    "value_name": "Estelar",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "11157705",
+                            "name": "Estelar",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                }
+            ],
+            "installments": {
+                "quantity": 10,
+                "amount": 190,
+                "rate": 0,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": true,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": null
+        },
+        {
+            "id": "MLB5264391666",
+            "title": "Apple watch se Gps 40 mm Estelar De Alumínio",
+            "condition": "new",
+            "thumbnail_id": "618548-MLU77116155549_062024",
+            "catalog_product_id": "MLB19679752",
+            "listing_type_id": "gold_pro",
+            "sanitized_title": "",
+            "permalink": "https://www.mercadolivre.com.br/applewatchse-gps40mm-estelar-de-aluminio/p/MLB19679752#wid=MLB5264391666&sid=unknown",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "thumbnail": "http://http2.mlstatic.com/D_618548-MLU77116155549_062024-I.jpg",
+            "currency_id": "BRL",
+            "order_backend": 6,
+            "price": 1960,
+            "original_price": null,
+            "sale_price": {
+                "price_id": "",
+                "amount": 1960,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [],
+                    "start_time": null,
+                    "end_time": null
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": null,
+                "type": "standard",
+                "metadata": {}
+            },
+            "available_quantity": 1,
+            "official_store_id": null,
+            "use_thumbnail_id": true,
+            "accepts_mercadopago": true,
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "drop_off",
+                "mode": "me2",
+                "tags": [
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2045-01-16T04:00:00.000Z",
+            "seller": {
+                "id": 1863473809,
+                "nickname": "SILVASHOPBR"
+            },
+            "address": {
+                "state_id": "BR-SP",
+                "state_name": "São Paulo",
+                "city_id": "BR-SP-22",
+                "city_name": "Praia Grande"
+            },
+            "attributes": [
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "CASE_COLOR",
+                    "name": "Cor da caixa",
+                    "value_id": "11157705",
+                    "value_name": "Estelar",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "11157705",
+                            "name": "Estelar",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "Código universal de produto",
+                    "value_id": null,
+                    "value_name": "194253767916",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "194253767916",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "2196205",
+                    "value_name": "SE",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2196205",
+                            "name": "SE",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "6784553",
+                    "value_name": "Watch (GPS)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "6784553",
+                            "name": "Watch (GPS)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "WEIGHT",
+                    "name": "Peso",
+                    "value_id": "8625025",
+                    "value_name": "36 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 36,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": "8625025",
+                            "name": "36 g",
+                            "struct": {
+                                "unit": "g",
+                                "number": 36
+                            },
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WRISTBAND_COLOR",
+                    "name": "Cor da pulseira",
+                    "value_id": "13288001",
+                    "value_name": "Estelar/Padrão",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "13288001",
+                            "name": "Estelar/Padrão",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                }
+            ],
+            "installments": {
+                "quantity": 10,
+                "amount": 196,
+                "rate": 0,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": true,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": null
+        },
+        {
+            "id": "MLB3963657043",
+            "title": "Apple Watch Se Gps (2da Gen)  Caixa Meia-noite De Alumínio  44 Mm  Pulseira Loop Esportiva Meia-noite",
+            "condition": "new",
+            "thumbnail_id": "628470-MLU77323058583_062024",
+            "catalog_product_id": "MLB27296643",
+            "listing_type_id": "gold_special",
+            "sanitized_title": "",
+            "permalink": "https://www.mercadolivre.com.br/apple-watch-se-gps-2da-gen-caixa-meia-noite-de-aluminio-44-mm-pulseira-loop-esportiva-meia-noite/p/MLB27296643#wid=MLB3963657043&sid=unknown",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "thumbnail": "http://http2.mlstatic.com/D_628470-MLU77323058583_062024-I.jpg",
+            "currency_id": "BRL",
+            "order_backend": 7,
+            "price": 2349,
+            "original_price": null,
+            "sale_price": {
+                "price_id": "",
+                "amount": 2349,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [],
+                    "start_time": null,
+                    "end_time": null
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": null,
+                "type": "standard",
+                "metadata": {}
+            },
+            "available_quantity": 1,
+            "official_store_id": null,
+            "use_thumbnail_id": true,
+            "accepts_mercadopago": true,
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "cross_docking",
+                "mode": "me2",
+                "tags": [
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2045-01-25T04:00:00.000Z",
+            "seller": {
+                "id": 183198882,
+                "nickname": "FOTO_CENTRO"
+            },
+            "address": {
+                "state_id": "BR-RJ",
+                "state_name": "Rio de Janeiro",
+                "city_id": "BR-RJ-01",
+                "city_name": "Rio de Janeiro"
+            },
+            "attributes": [
+                {
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": "20356611",
+                    "value_name": "A2723",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "20356611",
+                            "name": "A2723",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BEZEL_COLOR",
+                    "name": "Cor do bisel",
+                    "value_id": "976",
+                    "value_name": "Prata",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "976",
+                            "name": "Prata",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "CASE_COLOR",
+                    "name": "Cor da caixa",
+                    "value_id": "22056628",
+                    "value_name": "meia-noite",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "22056628",
+                            "name": "meia-noite",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "DETAILED_MODEL",
+                    "name": "Modelo detalhado",
+                    "value_id": "24638530",
+                    "value_name": "Apple Watch SE (2nd Generation, GPS)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "24638530",
+                            "name": "Apple Watch SE (2nd Generation, GPS)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "Código universal de produto",
+                    "value_id": null,
+                    "value_name": "195949643910",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "195949643910",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "2196205",
+                    "value_name": "SE",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2196205",
+                            "name": "SE",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "24645452",
+                    "value_name": "Watch SE (GPS) 2nd Generation",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "24645452",
+                            "name": "Watch SE (GPS) 2nd Generation",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "WEIGHT",
+                    "name": "Peso",
+                    "value_id": "21915126",
+                    "value_name": "32.9 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 32.9,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": "21915126",
+                            "name": "32.9 g",
+                            "struct": {
+                                "number": 32.9,
+                                "unit": "g"
+                            },
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WRISTBAND_COLOR",
+                    "name": "Cor da pulseira",
+                    "value_id": "11157706",
+                    "value_name": "Meia-noite",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "11157706",
+                            "name": "Meia-noite",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                }
+            ],
+            "installments": {
+                "quantity": 12,
+                "amount": 225.78,
+                "rate": 15.34,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": true,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": null
+        },
+        {
+            "id": "MLB3963824799",
+            "title": "Apple Watch Series 10 Gps  Caixa Preta Brilhante De Alumínio  46 Mm  Pulseira Esportiva Preta  M/g",
+            "condition": "new",
+            "thumbnail_id": "771841-MLA79082670326_092024",
+            "catalog_product_id": "MLB40694303",
+            "listing_type_id": "gold_special",
+            "sanitized_title": "",
+            "permalink": "https://www.mercadolivre.com.br/apple-watch-series-10-gps-caixa-preta-brilhante-de-aluminio-46-mm-pulseira-esportiva-preta-mg/p/MLB40694303#wid=MLB3963824799&sid=unknown",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "thumbnail": "http://http2.mlstatic.com/D_771841-MLA79082670326_092024-I.jpg",
+            "currency_id": "BRL",
+            "order_backend": 8,
+            "price": 3598.56,
+            "original_price": 4998,
+            "sale_price": {
+                "price_id": "",
+                "amount": 3598.56,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [
+                        "channel_marketplace"
+                    ],
+                    "start_time": "2025-01-20T03:00:00Z",
+                    "end_time": "2025-02-01T03:00:00Z"
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": 4998,
+                "type": "promotion",
+                "metadata": {
+                    "campaign_id": "P-MLB14525728",
+                    "promotion_id": "OFFER-MLB3963824799-11282646533",
+                    "promotion_type": "campaign"
+                }
+            },
+            "available_quantity": 1,
+            "official_store_id": null,
+            "use_thumbnail_id": true,
+            "accepts_mercadopago": true,
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "drop_off",
+                "mode": "me2",
+                "tags": [
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2045-01-25T04:00:00.000Z",
+            "seller": {
+                "id": 2135060115,
+                "nickname": "MEZYCOMERCIO"
+            },
+            "address": {
+                "state_id": "BR-SP",
+                "state_name": "São Paulo",
+                "city_id": "BR-SP-44",
+                "city_name": "São Paulo"
+            },
+            "attributes": [
+                {
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": "42533071",
+                    "value_name": "A2999",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "42533071",
+                            "name": "A2999",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "CASE_COLOR",
+                    "name": "Cor da caixa",
+                    "value_id": "199112",
+                    "value_name": "Preto-azeviche",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "199112",
+                            "name": "Preto-azeviche",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "Código universal de produto",
+                    "value_id": null,
+                    "value_name": "195949560972",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "195949560972",
+                            "struct": null,
+                            "source": 4353001852101296
+                        }
+                    ],
+                    "source": 4353001852101296,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 4353001852101296
+                        }
+                    ],
+                    "source": 4353001852101296,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "24700844",
+                    "value_name": "Series 10",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "24700844",
+                            "name": "Series 10",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "6784553",
+                    "value_name": "Watch (GPS)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "6784553",
+                            "name": "Watch (GPS)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "WEIGHT",
+                    "name": "Peso",
+                    "value_id": "16940348",
+                    "value_name": "36.4 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 36.4,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": "16940348",
+                            "name": "36.4 g",
+                            "struct": {
+                                "number": 36.4,
+                                "unit": "g"
+                            },
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WRISTBAND_COLOR",
+                    "name": "Cor da pulseira",
+                    "value_id": "52049",
+                    "value_name": "Preto",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "52049",
+                            "name": "Preto",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                }
+            ],
+            "installments": {
+                "quantity": 12,
+                "amount": 345.88,
+                "rate": 15.34,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": true,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": null
+        },
+        {
+            "id": "MLB5099470210",
+            "title": "Apple Watch Ultra 2 Gps + Cellular  Caixa Preta De Titânio De 49 Mm  Pulseira Oceano Preta - Distribuidor Autorizado",
+            "condition": "new",
+            "thumbnail_id": "844043-MLA79324289273_092024",
+            "catalog_product_id": "MLB1040694292",
+            "listing_type_id": "gold_pro",
+            "sanitized_title": "",
+            "permalink": "https://www.mercadolivre.com.br/apple-watch-ultra-2-gps-cellular-caixa-preta-de-titnio-de-49-mm-pulseira-oceano-preta-distribuidor-autorizado/p/MLB1040694292#wid=MLB5099470210&sid=unknown",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "thumbnail": "http://http2.mlstatic.com/D_844043-MLA79324289273_092024-I.jpg",
+            "currency_id": "BRL",
+            "order_backend": 9,
+            "price": 10499,
+            "original_price": null,
+            "sale_price": {
+                "price_id": "",
+                "amount": 10499,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [],
+                    "start_time": null,
+                    "end_time": null
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": null,
+                "type": "standard",
+                "metadata": {}
+            },
+            "available_quantity": 1,
+            "official_store_id": 2162,
+            "official_store_name": "Apple",
+            "use_thumbnail_id": true,
+            "accepts_mercadopago": true,
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "fulfillment",
+                "mode": "me2",
+                "tags": [
+                    "fulfillment",
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2044-09-28T04:00:00.000Z",
+            "seller": {
+                "id": 480263032,
+                "nickname": "Mercado Livre Eletronicos"
+            },
+            "address": {
+                "state_id": "BR-SP",
+                "state_name": "São Paulo",
+                "city_id": "QlItU1BDYWphbWFy",
+                "city_name": "Cajamar"
+            },
+            "attributes": [
+                {
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": "25133425",
+                    "value_name": "A2986",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "25133425",
+                            "name": "A2986",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BEZEL_COLOR",
+                    "name": "Cor do bisel",
+                    "value_id": "3204",
+                    "value_name": "Titânio",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "3204",
+                            "name": "Titânio",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "CASE_COLOR",
+                    "name": "Cor da caixa",
+                    "value_id": "52049",
+                    "value_name": "Preto",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "52049",
+                            "name": "Preto",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "DETAILED_MODEL",
+                    "name": "Modelo detalhado",
+                    "value_id": "25133430",
+                    "value_name": "Apple Watch Ultra 2 (GPS + Cellular)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "25133430",
+                            "name": "Apple Watch Ultra 2 (GPS + Cellular)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "Código universal de produto",
+                    "value_id": null,
+                    "value_name": "195949583131",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "195949583131",
+                            "struct": null,
+                            "source": 385122562515662
+                        }
+                    ],
+                    "source": 8748668969142,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "14769193",
+                    "value_name": "Apple Watch",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "14769193",
+                            "name": "Apple Watch",
+                            "struct": null,
+                            "source": 8748668969142
+                        }
+                    ],
+                    "source": 8748668969142,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "42532913",
+                    "value_name": "Watch Ultra 2 (GPS + Cellular)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "42532913",
+                            "name": "Watch Ultra 2 (GPS + Cellular)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "PACKAGE_LENGTH",
+                    "name": "Comprimento da embalagem",
+                    "value_id": null,
+                    "value_name": "21.7 cm",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 21.7,
+                        "unit": "cm"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "21.7 cm",
+                            "struct": {
+                                "number": 21.7,
+                                "unit": "cm"
+                            },
+                            "source": 4333789534002961
+                        }
+                    ],
+                    "source": 4333789534002961,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "PACKAGE_WEIGHT",
+                    "name": "Peso da embalagem",
+                    "value_id": null,
+                    "value_name": "460 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 460,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "460 g",
+                            "struct": {
+                                "unit": "g",
+                                "number": 460
+                            },
+                            "source": 4333789534002961
+                        }
+                    ],
+                    "source": 4333789534002961,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WEIGHT",
+                    "name": "Peso",
+                    "value_id": "22902894",
+                    "value_name": "61.8 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 61.8,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": "22902894",
+                            "name": "61.8 g",
+                            "struct": {
+                                "number": 61.8,
+                                "unit": "g"
+                            },
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WRISTBAND_COLOR",
+                    "name": "Cor da pulseira",
+                    "value_id": "52049",
+                    "value_name": "Preto",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "52049",
+                            "name": "Preto",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                }
+            ],
+            "installments": {
+                "quantity": 10,
+                "amount": 1049.9,
+                "rate": 0,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": true,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": "AJRU26981"
+        },
+        {
+            "id": "MLB5159805070",
+            "title": "Apple Watch Se (2ª Geração) Gps  Caixa Prateada De Alumínio 40mm  Pulseira Loop Esportiva Azul-inverno",
+            "condition": "new",
+            "thumbnail_id": "812681-MLU77129895804_062024",
+            "catalog_product_id": "MLB27366073",
+            "listing_type_id": "gold_pro",
+            "sanitized_title": "",
+            "permalink": "https://www.mercadolivre.com.br/apple-watch-se-2-geraco-gps-caixa-prateada-de-aluminio-40mm-pulseira-loop-esportiva-azul-inverno/p/MLB27366073#wid=MLB5159805070&sid=unknown",
+            "buying_mode": "buy_it_now",
+            "site_id": "MLB",
+            "category_id": "MLB135384",
+            "domain_id": "MLB-SMARTWATCHES",
+            "thumbnail": "http://http2.mlstatic.com/D_812681-MLU77129895804_062024-I.jpg",
+            "currency_id": "BRL",
+            "order_backend": 10,
+            "price": 2100,
+            "original_price": null,
+            "sale_price": {
+                "price_id": "",
+                "amount": 2100,
+                "conditions": {
+                    "eligible": true,
+                    "context_restrictions": [],
+                    "start_time": null,
+                    "end_time": null
+                },
+                "currency_id": "BRL",
+                "exchange_rate": null,
+                "payment_method_prices": [],
+                "payment_method_type": "TMP",
+                "regular_amount": null,
+                "type": "standard",
+                "metadata": {}
+            },
+            "available_quantity": 1,
+            "official_store_id": null,
+            "use_thumbnail_id": true,
+            "accepts_mercadopago": true,
+            "shipping": {
+                "store_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "drop_off",
+                "mode": "me2",
+                "tags": [
+                    "self_service_in",
+                    "mandatory_free_shipping"
+                ],
+                "benefits": null,
+                "promise": null,
+                "shipping_score": -1
+            },
+            "stop_time": "2044-10-31T04:00:00.000Z",
+            "seller": {
+                "id": 1870974013,
+                "nickname": "LA20240624212743"
+            },
+            "address": {
+                "state_id": "BR-PR",
+                "state_name": "Paraná",
+                "city_id": "QlItUFJSYW5jaG8gQWxlZ3JlIGQnJ09lc3Rl",
+                "city_name": "Rancho Alegre d'Oeste"
+            },
+            "attributes": [
+                {
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": "20891654",
+                    "value_name": "A2722",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "20891654",
+                            "name": "A2722",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BEZEL_COLOR",
+                    "name": "Cor do bisel",
+                    "value_id": "976",
+                    "value_name": "Prata",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "976",
+                            "name": "Prata",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "CASE_COLOR",
+                    "name": "Cor da caixa",
+                    "value_id": "976",
+                    "value_name": "Prata",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "976",
+                            "name": "Prata",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "DETAILED_MODEL",
+                    "name": "Modelo detalhado",
+                    "value_id": "24638530",
+                    "value_name": "Apple Watch SE (2nd Generation, GPS)",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "24638530",
+                            "name": "Apple Watch SE (2nd Generation, GPS)",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "GTIN",
+                    "name": "Código universal de produto",
+                    "value_id": null,
+                    "value_name": "194253770879",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "194253770879",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "string"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condição do item",
+                    "value_id": "2230284",
+                    "value_name": "Novo",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Novo",
+                            "struct": null,
+                            "source": 6402814585011704
+                        }
+                    ],
+                    "source": 6402814585011704,
+                    "value_type": "list"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Linha",
+                    "value_id": "54939",
+                    "value_name": "Series 2",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "54939",
+                            "name": "Series 2",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "24645452",
+                    "value_name": "Watch SE (GPS) 2nd Generation",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "24645452",
+                            "name": "Watch SE (GPS) 2nd Generation",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                },
+                {
+                    "id": "WEIGHT",
+                    "name": "Peso",
+                    "value_id": "22440725",
+                    "value_name": "26.4 g",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": {
+                        "number": 26.4,
+                        "unit": "g"
+                    },
+                    "values": [
+                        {
+                            "id": "22440725",
+                            "name": "26.4 g",
+                            "struct": {
+                                "unit": "g",
+                                "number": 26.4
+                            },
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "WRISTBAND_COLOR",
+                    "name": "Cor da pulseira",
+                    "value_id": "20010367",
+                    "value_name": "Azul Inverno",
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Outros",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "20010367",
+                            "name": "Azul Inverno",
+                            "struct": null,
+                            "source": 1
+                        }
+                    ],
+                    "source": 1,
+                    "value_type": "string"
+                }
+            ],
+            "installments": {
+                "quantity": 10,
+                "amount": 210,
+                "rate": 0,
+                "currency_id": "BRL",
+                "metadata": {
+                    "meliplus_installments": false,
+                    "additional_bank_interest": false
+                }
+            },
+            "winner_item_id": null,
+            "catalog_listing": true,
+            "discounts": null,
+            "promotion_decorations": null,
+            "promotions": null,
+            "inventory_id": null
+        }
+    ],
+    "sort": {
+        "id": "relevance",
+        "name": "Mais relevantes"
+    },
+    "available_sorts": [
+        {
+            "id": "price_asc",
+            "name": "Menor preço"
+        },
+        {
+            "id": "price_desc",
+            "name": "Maior preço"
+        }
+    ],
+    "filters": [
+        {
+            "id": "category",
+            "name": "Categorias",
+            "type": "text",
+            "values": [
+                {
+                    "id": "MLB135384",
+                    "name": "Smartwatches",
+                    "path_from_root": [
+                        {
+                            "id": "MLB1051",
+                            "name": "Celulares e Telefones"
+                        },
+                        {
+                            "id": "MLB417704",
+                            "name": "Smartwatches e Acessórios"
+                        },
+                        {
+                            "id": "MLB135384",
+                            "name": "Smartwatches"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "BRAND",
+            "name": "Marca",
+            "type": "STRING",
+            "values": [
+                {
+                    "id": "9344",
+                    "name": "Apple"
+                }
+            ]
+        }
+    ],
+    "available_filters": [
+        {
+            "id": "official_store",
+            "name": "Lojas oficiais",
+            "type": "text",
+            "values": [
+                {
+                    "id": "all",
+                    "name": "Todas as lojas oficiais",
+                    "results": 132
+                },
+                {
+                    "id": "2162",
+                    "name": "Apple",
+                    "results": 70
+                },
+                {
+                    "id": "3805",
+                    "name": "Iplace",
+                    "results": 51
+                },
+                {
+                    "id": "1553",
+                    "name": "Mobcom",
+                    "results": 2
+                }
+            ]
+        },
+        {
+            "id": "discount",
+            "name": "Descontos",
+            "type": "number",
+            "values": [
+                {
+                    "id": "5-100",
+                    "name": "Mais de 5% OFF",
+                    "results": 27
+                },
+                {
+                    "id": "10-100",
+                    "name": "Mais de 10% OFF",
+                    "results": 14
+                },
+                {
+                    "id": "15-100",
+                    "name": "Mais de 15% OFF",
+                    "results": 9
+                },
+                {
+                    "id": "20-100",
+                    "name": "Mais de 20% OFF",
+                    "results": 3
+                },
+                {
+                    "id": "25-100",
+                    "name": "Mais de 25% OFF",
+                    "results": 2
+                }
+            ]
+        },
+        {
+            "id": "price",
+            "name": "Preço",
+            "type": "range",
+            "values": [
+                {
+                    "id": "*-1500.0",
+                    "name": "Até R$ 1.500",
+                    "results": 277
+                },
+                {
+                    "id": "1500.0-3000.0",
+                    "name": "R$1.500 a R$3.000",
+                    "results": 557
+                },
+                {
+                    "id": "3000.0-*",
+                    "name": "Mais de R$3.000",
+                    "results": 431
+                }
+            ]
+        },
+        {
+            "id": "accepts_mercadopago",
+            "name": "Filtro por MercadoPago",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "yes",
+                    "name": "Com Mercado Pago",
+                    "results": 1265
+                }
+            ]
+        },
+        {
+            "id": "installments",
+            "name": "Pagamento",
+            "type": "text",
+            "values": [
+                {
+                    "id": "yes",
+                    "name": "Parcelamento sem juros",
+                    "results": 1265
+                },
+                {
+                    "id": "no_interest",
+                    "name": "Sem juros",
+                    "results": 561
+                }
+            ]
+        },
+        {
+            "id": "shipping",
+            "name": "Tipo de envio",
+            "type": "text",
+            "values": [
+                {
+                    "id": "mercadoenvios",
+                    "name": "Mercado Envios",
+                    "results": 1264
+                },
+                {
+                    "id": "fulfillment",
+                    "name": "Full",
+                    "results": 7
+                }
+            ]
+        },
+        {
+            "id": "power_seller",
+            "name": "Filtro MercadoLíderes",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "yes",
+                    "name": "Melhores vendedores",
+                    "results": 160
+                }
+            ]
+        },
+        {
+            "id": "since",
+            "name": "Filtro por data de início",
+            "type": "text",
+            "values": [
+                {
+                    "id": "today",
+                    "name": "Anunciados hoje",
+                    "results": 15
+                }
+            ]
+        },
+        {
+            "id": "until",
+            "name": "Filtro por data do fim",
+            "type": "text",
+            "values": [
+                {
+                    "id": "today",
+                    "name": "Termina hoje",
+                    "results": 1
+                }
+            ]
+        },
+        {
+            "id": "has_video",
+            "name": "Filtro por publicações com vídeo",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "yes",
+                    "name": "Publicações com vídeo",
+                    "results": 1
+                }
+            ]
+        },
+        {
+            "id": "has_pictures",
+            "name": "Filtro por publicação com imagens",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "yes",
+                    "name": "Com fotos",
+                    "results": 1265
+                }
+            ]
+        },
+        {
+            "id": "price_campaign_id",
+            "name": "Campanha",
+            "type": "number",
+            "values": [
+                {
+                    "id": "P-MLB14525728",
+                    "name": "P-MLB14525728",
+                    "results": 3
+                }
+            ]
+        },
+        {
+            "id": "shipping_cost",
+            "name": "Custo do frete",
+            "type": "text",
+            "values": [
+                {
+                    "id": "free",
+                    "name": "Grátis",
+                    "results": 806
+                }
+            ]
+        },
+        {
+            "id": "CASE_COLOR",
+            "name": "Cor da caixa",
+            "type": "STRING",
+            "values": [
+                {
+                    "id": "52049",
+                    "name": "Preto",
+                    "results": 199
+                },
+                {
+                    "id": "52053",
+                    "name": "Prateado",
+                    "results": 101
+                },
+                {
+                    "id": "52055",
+                    "name": "Branco",
+                    "results": 92
+                },
+                {
+                    "id": "162060",
+                    "name": "Cinza-espacial",
+                    "results": 69
+                },
+                {
+                    "id": "52051",
+                    "name": "Cinza-escuro",
+                    "results": 67
+                },
+                {
+                    "id": "976",
+                    "name": "Prata",
+                    "results": 57
+                },
+                {
+                    "id": "11157705",
+                    "name": "Estelar",
+                    "results": 51
+                },
+                {
+                    "id": "283165",
+                    "name": "Cinza",
+                    "results": 47
+                },
+                {
+                    "id": "11157706",
+                    "name": "Meia-noite",
+                    "results": 39
+                },
+                {
+                    "id": "199112",
+                    "name": "Preto-azeviche",
+                    "results": 31
+                },
+                {
+                    "id": "52028",
+                    "name": "Azul",
+                    "results": 27
+                },
+                {
+                    "id": "3204",
+                    "name": "Titânio",
+                    "results": 24
+                },
+                {
+                    "id": "5441535",
+                    "name": "Space gray",
+                    "results": 23
+                },
+                {
+                    "id": "51993",
+                    "name": "Vermelho",
+                    "results": 21
+                },
+                {
+                    "id": "52033",
+                    "name": "Azul-escuro",
+                    "results": 20
+                },
+                {
+                    "id": "283164",
+                    "name": "Dourado",
+                    "results": 20
+                },
+                {
+                    "id": "15988",
+                    "name": "Natural",
+                    "results": 19
+                },
+                {
+                    "id": "157432",
+                    "name": "Ouro rosa",
+                    "results": 19
+                },
+                {
+                    "id": "3002109",
+                    "name": "Midnight",
+                    "results": 15
+                },
+                {
+                    "id": "2723554",
+                    "name": "Silver",
+                    "results": 14
+                },
+                {
+                    "id": "10573649",
+                    "name": "Dourado",
+                    "results": 13
+                },
+                {
+                    "id": "52043",
+                    "name": "Rosa-claro",
+                    "results": 11
+                },
+                {
+                    "id": "51994",
+                    "name": "Rosa",
+                    "results": 10
+                },
+                {
+                    "id": "3275573",
+                    "name": "Starlight",
+                    "results": 10
+                },
+                {
+                    "id": "6707",
+                    "name": "Ardósia",
+                    "results": 9
+                },
+                {
+                    "id": "2790177",
+                    "name": "Rose",
+                    "results": 6
+                },
+                {
+                    "id": "23745840",
+                    "name": "Cinza Espacial",
+                    "results": 6
+                },
+                {
+                    "id": "12094793",
+                    "name": "Prata",
+                    "results": 6
+                },
+                {
+                    "id": "11171283",
+                    "name": "Rosado",
+                    "results": 6
+                },
+                {
+                    "id": "52019",
+                    "name": "Verde-escuro",
+                    "results": 5
+                },
+                {
+                    "id": "52014",
+                    "name": "Verde",
+                    "results": 5
+                },
+                {
+                    "id": "283161",
+                    "name": "Azul-marinho",
+                    "results": 5
+                },
+                {
+                    "id": "7139195",
+                    "name": "(Product)Red",
+                    "results": 4
+                },
+                {
+                    "id": "52003",
+                    "name": "Nude",
+                    "results": 4
+                },
+                {
+                    "id": "1117",
+                    "name": "Ouro",
+                    "results": 4
+                },
+                {
+                    "id": "59628",
+                    "name": "Ouro",
+                    "results": 3
+                },
+                {
+                    "id": "2826196",
+                    "name": "Preta",
+                    "results": 3
+                },
+                {
+                    "id": "26934122",
+                    "name": "Space gray",
+                    "results": 3
+                },
+                {
+                    "id": "11770070",
+                    "name": "Titanio",
+                    "results": 3
+                },
+                {
+                    "id": "11154991",
+                    "name": "Ouro",
+                    "results": 3
+                },
+                {
+                    "id": "52045",
+                    "name": "Rosa-pálido",
+                    "results": 2
+                },
+                {
+                    "id": "52031",
+                    "name": "Azul-aço",
+                    "results": 2
+                },
+                {
+                    "id": "52012",
+                    "name": "Dourado-escuro",
+                    "results": 2
+                },
+                {
+                    "id": "52010",
+                    "name": "Ocre",
+                    "results": 2
+                },
+                {
+                    "id": "52008",
+                    "name": "Creme",
+                    "results": 2
+                },
+                {
+                    "id": "283153",
+                    "name": "Palha",
+                    "results": 2
+                },
+                {
+                    "id": "283148",
+                    "name": "Coral-claro",
+                    "results": 2
+                },
+                {
+                    "id": "2324",
+                    "name": "Grafite",
+                    "results": 2
+                },
+                {
+                    "id": "21873676",
+                    "name": "Titânio natural",
+                    "results": 2
+                },
+                {
+                    "id": "140694",
+                    "name": "Azul-meia-noite",
+                    "results": 2
+                },
+                {
+                    "id": "11509144",
+                    "name": "Rose",
+                    "results": 2
+                },
+                {
+                    "id": "11361297",
+                    "name": "Titanium",
+                    "results": 2
+                },
+                {
+                    "id": "11227101",
+                    "name": "Grafite",
+                    "results": 2
+                },
+                {
+                    "id": "11154990",
+                    "name": "Silver",
+                    "results": 2
+                },
+                {
+                    "id": "11096854",
+                    "name": "Red",
+                    "results": 2
+                },
+                {
+                    "id": "10318829",
+                    "name": "Blue",
+                    "results": 2
+                },
+                {
+                    "id": "9156402",
+                    "name": "Prata",
+                    "results": 1
+                },
+                {
+                    "id": "59623",
+                    "name": "Gray",
+                    "results": 1
+                },
+                {
+                    "id": "5393249",
+                    "name": "Space",
+                    "results": 1
+                },
+                {
+                    "id": "52021",
+                    "name": "Azul-celeste",
+                    "results": 1
+                },
+                {
+                    "id": "52005",
+                    "name": "Marrom",
+                    "results": 1
+                },
+                {
+                    "id": "52001",
+                    "name": "Bege",
+                    "results": 1
+                },
+                {
+                    "id": "5190387",
+                    "name": "Space grey",
+                    "results": 1
+                },
+                {
+                    "id": "3794319",
+                    "name": "Rosé",
+                    "results": 1
+                },
+                {
+                    "id": "3071503",
+                    "name": "Graphite",
+                    "results": 1
+                },
+                {
+                    "id": "283163",
+                    "name": "Rosa-chiclete",
+                    "results": 1
+                },
+                {
+                    "id": "283150",
+                    "name": "Laranja-claro",
+                    "results": 1
+                },
+                {
+                    "id": "24863396",
+                    "name": "Plateado",
+                    "results": 1
+                },
+                {
+                    "id": "24160580",
+                    "name": "Preto e Branco",
+                    "results": 1
+                },
+                {
+                    "id": "17283905",
+                    "name": "Inox",
+                    "results": 1
+                },
+                {
+                    "id": "11509146",
+                    "name": "Dourado",
+                    "results": 1
+                }
+            ]
+        },
+        {
+            "id": "INCLUDES_CHARGER",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Inclui carregador",
+                    "results": 283
+                }
+            ]
+        },
+        {
+            "id": "IS_INFANT",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "É infantil",
+                    "results": 16
+                }
+            ]
+        },
+        {
+            "id": "IS_SMARTBAND",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "É smartband",
+                    "results": 258
+                }
+            ]
+        },
+        {
+            "id": "IS_WATER_RESISTANT",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "É resistente à água",
+                    "results": 1093
+                }
+            ]
+        },
+        {
+            "id": "ITEM_CONDITION",
+            "name": "Condição",
+            "type": "STRING",
+            "values": [
+                {
+                    "id": "2230581",
+                    "name": "Usado",
+                    "results": 730
+                },
+                {
+                    "id": "2230284",
+                    "name": "Novo",
+                    "results": 533
+                },
+                {
+                    "id": "2230582",
+                    "name": "Recondicionado",
+                    "results": 2
+                }
+            ]
+        },
+        {
+            "id": "MAX_WATER_RESISTANCE_DEPTH",
+            "name": "Profundidade máxima de resistência à água",
+            "type": "range",
+            "values": [
+                {
+                    "id": "(*-100m)",
+                    "name": "100 m ou menos",
+                    "results": 866
+                },
+                {
+                    "id": "[100m-*)",
+                    "name": "100 m ou mais",
+                    "results": 42
+                }
+            ]
+        },
+        {
+            "id": "SHIPPING_ORIGIN",
+            "name": "Tipo de compra",
+            "type": "STRING",
+            "values": [
+                {
+                    "id": "10215068",
+                    "name": "Local",
+                    "results": 1263
+                },
+                {
+                    "id": "10215069",
+                    "name": "Internacional",
+                    "results": 2
+                }
+            ]
+        },
+        {
+            "id": "SMARTWATCH_CASE_MATERIAL",
+            "name": "Material da caixa do smartwatch ",
+            "type": "STRING",
+            "values": [
+                {
+                    "id": "2655086",
+                    "name": "Alumínio",
+                    "results": 747
+                },
+                {
+                    "id": "3254588",
+                    "name": "Titânio",
+                    "results": 161
+                },
+                {
+                    "id": "8797940",
+                    "name": "ABS",
+                    "results": 42
+                },
+                {
+                    "id": "2803405",
+                    "name": "Aço inoxidável",
+                    "results": 33
+                },
+                {
+                    "id": "7881505",
+                    "name": "Aço",
+                    "results": 2
+                },
+                {
+                    "id": "415334",
+                    "name": "Plástico",
+                    "results": 2
+                },
+                {
+                    "id": "10873126",
+                    "name": "Cerâmica",
+                    "results": 2
+                },
+                {
+                    "id": "7450228",
+                    "name": "Aluminio/Cerâmica",
+                    "results": 1
+                },
+                {
+                    "id": "23353828",
+                    "name": "Papel",
+                    "results": 1
+                }
+            ]
+        },
+        {
+            "id": "WITH_BLUETOOTH",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Com Bluetooth",
+                    "results": 1147
+                }
+            ]
+        },
+        {
+            "id": "WITH_CAMERA",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Com câmera",
+                    "results": 35
+                }
+            ]
+        },
+        {
+            "id": "WITH_FAST_CHARGING",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Com carregamento rápido",
+                    "results": 201
+                }
+            ]
+        },
+        {
+            "id": "WITH_GPS",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Com GPS",
+                    "results": 1129
+                }
+            ]
+        },
+        {
+            "id": "WITH_INTEGRATED_MAPS",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Com mapas integrados",
+                    "results": 394
+                }
+            ]
+        },
+        {
+            "id": "WITH_INTERCHANGEABLE_WRISTBAND",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Com pulseira intercambiável",
+                    "results": 668
+                }
+            ]
+        },
+        {
+            "id": "WITH_MICROPHONE",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Com microfone",
+                    "results": 788
+                }
+            ]
+        },
+        {
+            "id": "WITH_MOBILE_NETWORK",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Com rede móvel",
+                    "results": 399
+                }
+            ]
+        },
+        {
+            "id": "WITH_NFC",
+            "name": "Outras características",
+            "type": "boolean",
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Com NFC",
+                    "results": 570
+                }
+            ]
+        },
+        {
+            "id": "WRISTBAND_COLOR",
+            "name": "Cor da pulseira",
+            "type": "STRING",
+            "values": [
+                {
+                    "id": "52049",
+                    "name": "Preto",
+                    "results": 318
+                },
+                {
+                    "id": "52055",
+                    "name": "Branco",
+                    "results": 77
+                },
+                {
+                    "id": "11157706",
+                    "name": "Meia-noite",
+                    "results": 65
+                },
+                {
+                    "id": "11157705",
+                    "name": "Estelar",
+                    "results": 55
+                },
+                {
+                    "id": "52028",
+                    "name": "Azul",
+                    "results": 43
+                },
+                {
+                    "id": "52051",
+                    "name": "Cinza-escuro",
+                    "results": 30
+                },
+                {
+                    "id": "52033",
+                    "name": "Azul-escuro",
+                    "results": 30
+                },
+                {
+                    "id": "2826196",
+                    "name": "Preta",
+                    "results": 26
+                },
+                {
+                    "id": "4442937",
+                    "name": "Azul-denim",
+                    "results": 23
+                },
+                {
+                    "id": "51993",
+                    "name": "Vermelho",
+                    "results": 21
+                },
+                {
+                    "id": "283161",
+                    "name": "Azul-marinho",
+                    "results": 19
+                },
+                {
+                    "id": "283165",
+                    "name": "Cinza",
+                    "results": 18
+                },
+                {
+                    "id": "8589490",
+                    "name": "Tinta",
+                    "results": 17
+                },
+                {
+                    "id": "116435",
+                    "name": "Black",
+                    "results": 17
+                },
+                {
+                    "id": "52001",
+                    "name": "Bege",
+                    "results": 14
+                },
+                {
+                    "id": "3002109",
+                    "name": "Midnight",
+                    "results": 12
+                },
+                {
+                    "id": "52043",
+                    "name": "Rosa-claro",
+                    "results": 11
+                },
+                {
+                    "id": "19284347",
+                    "name": "Azul-nuvem",
+                    "results": 11
+                },
+                {
+                    "id": "11167102",
+                    "name": "Azul-abissal",
+                    "results": 10
+                },
+                {
+                    "id": "8275418",
+                    "name": "Rosa-areia",
+                    "results": 9
+                },
+                {
+                    "id": "52053",
+                    "name": "Prateado",
+                    "results": 9
+                },
+                {
+                    "id": "51994",
+                    "name": "Rosa",
+                    "results": 9
+                },
+                {
+                    "id": "52019",
+                    "name": "Verde-escuro",
+                    "results": 8
+                },
+                {
+                    "id": "52000",
+                    "name": "Laranja",
+                    "results": 8
+                },
+                {
+                    "id": "3275573",
+                    "name": "Starlight",
+                    "results": 8
+                },
+                {
+                    "id": "2790166",
+                    "name": "White",
+                    "results": 8
+                },
+                {
+                    "id": "1858",
+                    "name": "Ameixa",
+                    "results": 8
+                },
+                {
+                    "id": "24635335",
+                    "name": "Azul tempestade",
+                    "results": 7
+                },
+                {
+                    "id": "11162517",
+                    "name": "Cinza-carvão/preto",
+                    "results": 7
+                },
+                {
+                    "id": "52003",
+                    "name": "Nude",
+                    "results": 6
+                },
+                {
+                    "id": "283164",
+                    "name": "Dourado",
+                    "results": 6
+                },
+                {
+                    "id": "24886079",
+                    "name": "Rosa claro",
+                    "results": 6
+                },
+                {
+                    "id": "15988",
+                    "name": "Natural",
+                    "results": 6
+                },
+                {
+                    "id": "52045",
+                    "name": "Rosa-pálido",
+                    "results": 5
+                },
+                {
+                    "id": "52029",
+                    "name": "Azul-claro",
+                    "results": 5
+                },
+                {
+                    "id": "3071326",
+                    "name": "Canela",
+                    "results": 5
+                },
+                {
+                    "id": "11291504",
+                    "name": "Trevo",
+                    "results": 5
+                },
+                {
+                    "id": "10584588",
+                    "name": "Marinho-escuro",
+                    "results": 5
+                },
+                {
+                    "id": "7139195",
+                    "name": "(Product)Red",
+                    "results": 4
+                },
+                {
+                    "id": "52024",
+                    "name": "Azul-petróleo",
+                    "results": 4
+                },
+                {
+                    "id": "52014",
+                    "name": "Verde",
+                    "results": 4
+                },
+                {
+                    "id": "81760",
+                    "name": "Cinza/Preto",
+                    "results": 3
+                },
+                {
+                    "id": "6707",
+                    "name": "Ardósia",
+                    "results": 3
+                },
+                {
+                    "id": "52031",
+                    "name": "Azul-aço",
+                    "results": 3
+                },
+                {
+                    "id": "52008",
+                    "name": "Creme",
+                    "results": 3
+                },
+                {
+                    "id": "4374964",
+                    "name": "Pink sand",
+                    "results": 3
+                },
+                {
+                    "id": "283163",
+                    "name": "Rosa-chiclete",
+                    "results": 3
+                },
+                {
+                    "id": "283158",
+                    "name": "Verde-musgo",
+                    "results": 3
+                },
+                {
+                    "id": "283148",
+                    "name": "Coral-claro",
+                    "results": 3
+                },
+                {
+                    "id": "20010367",
+                    "name": "Azul Inverno",
+                    "results": 3
+                },
+                {
+                    "id": "94310",
+                    "name": "Verde/Cinza",
+                    "results": 2
+                },
+                {
+                    "id": "52005",
+                    "name": "Marrom",
+                    "results": 2
+                },
+                {
+                    "id": "4113348",
+                    "name": "Platina/Preto",
+                    "results": 2
+                },
+                {
+                    "id": "3031315",
+                    "name": "Cinza-pedra",
+                    "results": 2
+                },
+                {
+                    "id": "283162",
+                    "name": "Índigo",
+                    "results": 2
+                },
+                {
+                    "id": "2816846",
+                    "name": "Vinho",
+                    "results": 2
+                },
+                {
+                    "id": "2790177",
+                    "name": "Rose",
+                    "results": 2
+                },
+                {
+                    "id": "2723554",
+                    "name": "Silver",
+                    "results": 2
+                },
+                {
+                    "id": "24635324",
+                    "name": "Medianoche",
+                    "results": 2
+                },
+                {
+                    "id": "11227101",
+                    "name": "Grafite",
+                    "results": 2
+                },
+                {
+                    "id": "11096854",
+                    "name": "Red",
+                    "results": 2
+                },
+                {
+                    "id": "10318829",
+                    "name": "Blue",
+                    "results": 2
+                },
+                {
+                    "id": "9936090",
+                    "name": "Carvão",
+                    "results": 1
+                },
+                {
+                    "id": "976",
+                    "name": "Prata",
+                    "results": 1
+                },
+                {
+                    "id": "9156402",
+                    "name": "Prata",
+                    "results": 1
+                },
+                {
+                    "id": "81752",
+                    "name": "Azul/Cinza",
+                    "results": 1
+                },
+                {
+                    "id": "74946",
+                    "name": "Azul/Preto",
+                    "results": 1
+                },
+                {
+                    "id": "6789403",
+                    "name": "PR",
+                    "results": 1
+                },
+                {
+                    "id": "5441535",
+                    "name": "Space gray",
+                    "results": 1
+                },
+                {
+                    "id": "52021",
+                    "name": "Azul-celeste",
+                    "results": 1
+                },
+                {
+                    "id": "52012",
+                    "name": "Dourado-escuro",
+                    "results": 1
+                },
+                {
+                    "id": "3071503",
+                    "name": "Graphite",
+                    "results": 1
+                },
+                {
+                    "id": "3035060",
+                    "name": "Anthracite/Black",
+                    "results": 1
+                },
+                {
+                    "id": "283155",
+                    "name": "Marrom-escuro",
+                    "results": 1
+                },
+                {
+                    "id": "283154",
+                    "name": "Marrom-claro",
+                    "results": 1
+                },
+                {
+                    "id": "283153",
+                    "name": "Palha",
+                    "results": 1
+                },
+                {
+                    "id": "283150",
+                    "name": "Laranja-claro",
+                    "results": 1
+                },
+                {
+                    "id": "26871478",
+                    "name": "Azul Storm",
+                    "results": 1
+                },
+                {
+                    "id": "25932879",
+                    "name": "Cinza/azul",
+                    "results": 1
+                },
+                {
+                    "id": "24425969",
+                    "name": "Green",
+                    "results": 1
+                },
+                {
+                    "id": "24126319",
+                    "name": "Arenito",
+                    "results": 1
+                },
+                {
+                    "id": "2324",
+                    "name": "Grafite",
+                    "results": 1
+                },
+                {
+                    "id": "17520287",
+                    "name": "Variadas",
+                    "results": 1
+                },
+                {
+                    "id": "11741199",
+                    "name": "Black",
+                    "results": 1
+                },
+                {
+                    "id": "11509144",
+                    "name": "Rose",
+                    "results": 1
+                },
+                {
+                    "id": "11140070",
+                    "name": "Névoa",
+                    "results": 1
+                },
+                {
+                    "id": "10584590",
+                    "name": "Verde chipre",
+                    "results": 1
+                }
+            ]
+        },
+        {
+            "id": "WRISTBAND_MATERIAL",
+            "name": "Material da pulseira",
+            "type": "STRING",
+            "values": [
+                {
+                    "id": "227104",
+                    "name": "Fluoroelastómero",
+                    "results": 531
+                },
+                {
+                    "id": "2466987",
+                    "name": "Silicone",
+                    "results": 239
+                },
+                {
+                    "id": "4086949",
+                    "name": "Aço inoxidável",
+                    "results": 26
+                },
+                {
+                    "id": "7980354",
+                    "name": "Náilon",
+                    "results": 23
+                },
+                {
+                    "id": "25151854",
+                    "name": "Titânio/Nylon/Poliéster/Elastano",
+                    "results": 22
+                },
+                {
+                    "id": "14718555",
+                    "name": "Borracha",
+                    "results": 14
+                },
+                {
+                    "id": "2748302",
+                    "name": "Plástico",
+                    "results": 12
+                },
+                {
+                    "id": "2395698",
+                    "name": "Borracha",
+                    "results": 12
+                },
+                {
+                    "id": "24635334",
+                    "name": "Tecido de nylon de camada dupla",
+                    "results": 11
+                },
+                {
+                    "id": "226758",
+                    "name": "Náilon trançado",
+                    "results": 11
+                },
+                {
+                    "id": "25151853",
+                    "name": "Titânio/Poliéster/Elastano",
+                    "results": 7
+                },
+                {
+                    "id": "25151852",
+                    "name": "Titânio/Fluoroelastómero",
+                    "results": 4
+                },
+                {
+                    "id": "482783",
+                    "name": "Couro",
+                    "results": 2
+                },
+                {
+                    "id": "2832463",
+                    "name": "Titânio",
+                    "results": 2
+                },
+                {
+                    "id": "2469707",
+                    "name": "Tecido",
+                    "results": 2
+                },
+                {
+                    "id": "112648",
+                    "name": "Metal",
+                    "results": 2
+                },
+                {
+                    "id": "9228003",
+                    "name": "Borracha de silicone",
+                    "results": 1
+                },
+                {
+                    "id": "6808769",
+                    "name": "Velcro",
+                    "results": 1
+                },
+                {
+                    "id": "3638982",
+                    "name": "Polímero",
+                    "results": 1
+                },
+                {
+                    "id": "2832464",
+                    "name": "Carbono",
+                    "results": 1
+                },
+                {
+                    "id": "2748301",
+                    "name": "Alumínio",
+                    "results": 1
+                },
+                {
+                    "id": "2481975",
+                    "name": "Prata",
+                    "results": 1
+                },
+                {
+                    "id": "2467061",
+                    "name": "Alumínio",
+                    "results": 1
+                },
+                {
+                    "id": "111551",
+                    "name": "Poliuretano",
+                    "results": 1
+                }
+            ]
+        },
+        {
+            "id": "state",
+            "name": "Localização",
+            "type": "text",
+            "values": [
+                {
+                    "id": "TUxCUFNBT085N2E4",
+                    "name": "São Paulo",
+                    "results": 581
+                },
+                {
+                    "id": "TUxCUFJJT0xkYzM0",
+                    "name": "Rio Grande do Sul",
+                    "results": 147
+                },
+                {
+                    "id": "TUxCUFBBUkExODBlZA",
+                    "name": "Paraná",
+                    "results": 132
+                },
+                {
+                    "id": "TUxCUFJJT08xODM5Zg",
+                    "name": "Rio de Janeiro",
+                    "results": 107
+                },
+                {
+                    "id": "TUxCUE1JTlMxNTAyZA",
+                    "name": "Minas Gerais",
+                    "results": 71
+                },
+                {
+                    "id": "TUxCUFNBTkE5Nzc4",
+                    "name": "Santa Catarina",
+                    "results": 49
+                },
+                {
+                    "id": "TUxCUERJU0wxMWJhYg",
+                    "name": "Distrito Federal",
+                    "results": 27
+                },
+                {
+                    "id": "TUxCUEJBSEFlYmEx",
+                    "name": "Bahia",
+                    "results": 25
+                },
+                {
+                    "id": "TUxCUEdPSVMxNzVmMw",
+                    "name": "Goiás",
+                    "results": 24
+                },
+                {
+                    "id": "TUxCUEVTUE8xN2Y3NA",
+                    "name": "Espírito Santo",
+                    "results": 16
+                },
+                {
+                    "id": "TUxCUFBFUk8xZmZj",
+                    "name": "Pernambuco",
+                    "results": 14
+                },
+                {
+                    "id": "TUxCUE1BVE9jZDY0",
+                    "name": "Mato Grosso",
+                    "results": 11
+                },
+                {
+                    "id": "TUxCUENFQUExNzkyZQ",
+                    "name": "Ceará",
+                    "results": 11
+                },
+                {
+                    "id": "TUxCUE1BVEw4ZTc",
+                    "name": "Mato Grosso do Sul",
+                    "results": 8
+                },
+                {
+                    "id": "TUxCUFBBUkFiY2Uw",
+                    "name": "Pará",
+                    "results": 7
+                },
+                {
+                    "id": "TUxCUFJJT0VkMmNj",
+                    "name": "Rio Grande do Norte",
+                    "results": 6
+                },
+                {
+                    "id": "TUxCUFBBUkE0M2I4",
+                    "name": "Paraíba",
+                    "results": 5
+                },
+                {
+                    "id": "TUxCUE1BUk81MWVi",
+                    "name": "Maranhão",
+                    "results": 4
+                },
+                {
+                    "id": "TUxCUEFNQVMxNzgwYQ",
+                    "name": "Amazonas",
+                    "results": 4
+                },
+                {
+                    "id": "TUxCUEFMQVNmZjUw",
+                    "name": "Alagoas",
+                    "results": 2
+                },
+                {
+                    "id": "TUxCUFJPTkExMmU4YQ",
+                    "name": "Rondônia",
+                    "results": 2
+                },
+                {
+                    "id": "TUxCUEFDUkVkNTU",
+                    "name": "Acre",
+                    "results": 1
+                },
+                {
+                    "id": "TUxCUEFNQUExNTZlNg",
+                    "name": "Amapá",
+                    "results": 1
+                },
+                {
+                    "id": "TUxCUFBJQUk1NDVj",
+                    "name": "Piauí",
+                    "results": 1
+                },
+                {
+                    "id": "TUxCUFNFUkUxMmZlOQ",
+                    "name": "Sergipe",
+                    "results": 1
+                }
+            ]
+        }
+    ],
+    "pdp_tracking": {
+        "group": false,
+        "product_info": [
+            {
+                "id": "MLB1040656040",
+                "score": 1,
+                "status": "shown"
+            },
+            {
+                "id": "MLB19679759",
+                "score": 1,
+                "status": "shown"
+            },
+            {
+                "id": "MLB1040694303",
+                "score": 1,
+                "status": "shown"
+            },
+            {
+                "id": "MLB27366066",
+                "score": 1,
+                "status": "shown"
+            },
+            {
+                "id": "MLB19679752",
+                "score": 1,
+                "status": "shown"
+            },
+            {
+                "id": "MLB27296643",
+                "score": 1,
+                "status": "shown"
+            },
+            {
+                "id": "MLB40694303",
+                "score": 1,
+                "status": "shown"
+            },
+            {
+                "id": "MLB1040694292",
+                "score": 1,
+                "status": "shown"
+            },
+            {
+                "id": "MLB27366073",
+                "score": 1,
+                "status": "shown"
+            }
+        ]
+    },
+    "user_context": null,
+    "ranking_introspection": {}
+}
