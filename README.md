@@ -4,6 +4,7 @@
 
 ## 🛠 Requisitos  
 - **Xcode 16**  
+- **iOS 17**
 
 ## ✅ Cobertura de Pruebas  
 Decidí centrarme en las pruebas unitarias de la **lógica de negocio**. También probé algunos elementos de la interfaz de usuario, como la configuración de botones e interacciones básicas.  
@@ -91,5 +92,6 @@ Aquí tienes algunas capturas de pantalla de la aplicación:
 <p align="center">
   <img src=".imgs/Query.png" width="200">
   <img src=".imgs/Result.png" width="200">
+  <img src=".imgs/Filter.png" width="200">
   <img src=".imgs/Detail.png" width="200">
 </p>
