@@ -77,6 +77,7 @@ extension SearchUseCase {
                 productID: result.id,
                 title: result.title,
                 thumbnail: result.thumbnail,
+                condition: result.condition,
                 price: .init(
                     amount: result.salePrice.amount,
                     originalAmount: result.salePrice.regularAmount,

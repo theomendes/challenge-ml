@@ -13,7 +13,9 @@ struct ProductDetailScreen: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
-                Text("New")
+                if item.condition == "new" {
+                    Text("New")
+                }
                 Header(item: item)
 
                 priceView
@@ -21,7 +23,7 @@ struct ProductDetailScreen: View {
                 Description(item: item)
                     .padding(.top)
             }
-            .padding(.horizontal)
+            .padding()
         }
         .scrollIndicators(.hidden)
         .background(Color.white)

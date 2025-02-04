@@ -13,6 +13,7 @@ extension SearchResultItem {
             productID: "MLB5097135428",
             title: "Apple Watch Series 10",
             thumbnail: URL(string: "http://http2.mlstatic.com/D_837437-MLA79083751040_092024-I.jpg")!,
+            condition: "new",
             price: .init(
                 amount: 5499,
                 originalAmount: 6799,

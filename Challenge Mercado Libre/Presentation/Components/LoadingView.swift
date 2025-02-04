@@ -77,6 +77,9 @@ final class LoadingView: UIView {
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
+
+            loadingImage.heightAnchor.constraint(equalToConstant: 100),
+            loadingImage.widthAnchor.constraint(equalToConstant: 100),
         ])
     }
 

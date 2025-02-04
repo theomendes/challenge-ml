@@ -36,10 +36,11 @@ final class SearchResultVC: BaseVC {
         return view
     }()
 
-    private let errorView: ErrorView = {
+    private lazy var errorView: ErrorView = {
         let view = ErrorView()
         view.isHidden = true
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.delegate = self
         return view
     }()
 
@@ -135,5 +136,11 @@ final class SearchResultVC: BaseVC {
     @objc
     private func didTapShowFilter() {
         goToFilter(with: viewModel.filters)
+    }
+}
+
+extension SearchResultVC: ErrorViewDelegate {
+    func didTapRetry() {
+        getResults(isLoadingMore: false)
     }
 }

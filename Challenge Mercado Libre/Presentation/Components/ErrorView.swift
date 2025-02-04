@@ -45,7 +45,7 @@ final class ErrorView: UIView {
         configuration.buttonSize = .large
 
         let button = UIButton(configuration: configuration, primaryAction: nil)
-        button.setTitle("Tentar novamente", for: .normal)
+        button.setTitle(NSLocalizedString("error_view_retry_button", comment: "Try again"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(didTapRetry), for: .touchUpInside)
         return button

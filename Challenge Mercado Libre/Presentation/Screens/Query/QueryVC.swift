@@ -25,7 +25,7 @@ final class QueryVC: BaseVC {
     }()
 
     private let imageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "MercadoLibre-Logo"))
+        let imageView = UIImageView(image: UIImage.mercadoLibreLogo)
         imageView.tintColor = .systemPink
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -58,7 +58,7 @@ final class QueryVC: BaseVC {
         configuration.buttonSize = .large
 
         let button = MLButton(configuration: configuration, primaryAction: nil)
-        button.setTitle("Buscar", for: .normal)
+        button.setTitle(NSLocalizedString("search_button", comment: "Search"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isEnabled = false
         button.addTarget(self, action: #selector(searchButtonTapped), for: .touchUpInside)
