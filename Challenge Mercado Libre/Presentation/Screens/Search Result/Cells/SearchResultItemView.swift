@@ -25,6 +25,10 @@ struct SearchResultItemView: View {
             .clipped()
 
             VStack(alignment: .leading, spacing: 10) {
+                if item.condition == "new" {
+                    Text("New")
+                }
+
                 titleView
 
                 priceView
@@ -32,7 +36,8 @@ struct SearchResultItemView: View {
                 if item.freeShipping {
                     Text("Free shipping")
                         .font(.caption)
-                        .foregroundStyle(.black)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.green)
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -77,9 +82,17 @@ struct SearchResultItemView: View {
 
     @ViewBuilder
     var priceView: some View {
-        Text(item.price.formatedAmount)
-            .font(.caption)
-            .foregroundStyle(.black)
+        VStack(alignment: .leading) {
+            Text(item.price.formatedAmount)
+                .font(.title)
+                .foregroundStyle(.black)
+
+            if let installments = item.price.installments, installments.quantity > 0 {
+                Text("In \(installments.quantity)x \(installments.formatedAmount)")
+                    .font(.subheadline)
+                    .foregroundStyle(installments.rate == 0 ? .green : .black)
+            }
+        }
     }
 }
 

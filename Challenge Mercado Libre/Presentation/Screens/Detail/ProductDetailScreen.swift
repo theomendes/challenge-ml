@@ -39,7 +39,7 @@ struct ProductDetailScreen: View {
             if let installments = item.price.installments, installments.quantity > 0 {
                 Text("In \(installments.quantity)x \(installments.formatedAmount)")
                     .font(.subheadline)
-                    .foregroundStyle(.green)
+                    .foregroundStyle(installments.rate == 0 ? .green : .black)
             }
         }
     }
