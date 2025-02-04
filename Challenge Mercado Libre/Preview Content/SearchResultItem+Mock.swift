@@ -23,6 +23,7 @@ extension SearchResultItem {
                     quantity: 10,
                     amount: 549.90,
                     currency: "BRL",
+                    rate: 0,
                     formatedAmount: "R$ 549,90")),
             freeShipping: true,
             officialStore: "Apple",

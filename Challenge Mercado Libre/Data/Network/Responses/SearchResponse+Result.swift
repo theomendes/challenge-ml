@@ -67,7 +67,7 @@ extension SearchResponse.Result {
     struct Installments: Decodable {
         let quantity: Int
         let amount: Decimal
-        let rate: Decimal
+        let rate: Double
         let currency: String
 
         enum CodingKeys: String, CodingKey {

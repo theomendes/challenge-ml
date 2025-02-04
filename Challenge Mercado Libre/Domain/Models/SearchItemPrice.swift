@@ -29,6 +29,7 @@ extension SearchItemPrice {
         let quantity: Int
         let amount: Decimal
         let currency: String
+        let rate: Double
         let formatedAmount: String
     }
 }

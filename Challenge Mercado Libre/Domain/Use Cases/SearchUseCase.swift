@@ -70,6 +70,7 @@ extension SearchUseCase {
                     quantity: installmentsData.quantity,
                     amount: installmentsData.amount,
                     currency: installmentsData.currency,
+                    rate: installmentsData.rate,
                     formatedAmount: self?.formatCurrency(amount: installmentsData.amount as NSNumber, currency: installmentsData.currency) ?? ""
                 )
             }
