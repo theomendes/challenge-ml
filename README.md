@@ -36,6 +36,13 @@ Implementé un flujo simple compuesto por:
 ✔ **Filtros de búsqueda**  
 ✔ **Detalle del producto**, con **opción de compartir**  
 
+## 📱 Compatibilidad con modos de pantalla
+La aplicación es compatible con **todos los modos de orientación**:
+- **Retrato (vertical)**
+- **Paisaje (horizontal)**
+
+Se ha diseñado para ofrecer una experiencia fluida en cualquier orientación de la pantalla.
+
 ## 🌍 Localización  
 La aplicación está **totalmente localizada** en tres idiomas:  
 - **Portugués**  
@@ -76,3 +83,13 @@ xcrun simctl openurl booted "challenge-ml://search?q=Apple%20Watch&siteId=MLB&ca
 
 ## 🔒 Consideraciones de Seguridad  
 Para mostrar las imágenes de los productos, fue necesario habilitar **Allow Arbitrary Loads** en **Info.plist**, ya que algunas imágenes son servidas a través de **HTTP** en lugar de **HTTPS**.  
+
+## Screenshots
+
+Aquí tienes algunas capturas de pantalla de la aplicación:
+
+<p align="center">
+  <img src="/.imgs/Query.png" width="100">
+  <img src="/.imgs/Result.png" width="100">
+  <img src="/.imgs/Detail.png" width="100">
+</p>
