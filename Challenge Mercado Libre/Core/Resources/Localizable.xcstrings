@@ -3,6 +3,12 @@
   "strings" : {
     "By %@" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By %@"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19,6 +25,12 @@
     },
     "Characteristics" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caracteristics"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29,6 +41,29 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Caracteristicas"
+          }
+        }
+      }
+    },
+    "error_view_retry_button" : {
+      "comment" : "Try again",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retry"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reintentar"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentar novamente"
           }
         }
       }
@@ -79,6 +114,12 @@
     },
     "New" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -111,6 +152,29 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Loja oficial %@"
+          }
+        }
+      }
+    },
+    "search_button" : {
+      "comment" : "Search",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar"
           }
         }
       }
